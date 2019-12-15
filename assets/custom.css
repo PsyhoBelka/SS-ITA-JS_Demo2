@@ -1,0 +1,24 @@
+.uk-divider-vertical-custom {
+    width: 1px;
+    border: #000000;
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-left: 1px solid #333;
+}
+
+hr.under-header-divider {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+.clickable {
+    color: #0e6dcd;
+    text-decoration: underline;
+}
