@@ -1,10 +1,10 @@
-import { Templater } from '../Templater.js';
+import {Templater} from '../Templater.js';
 
 export class MenuView {
   constructor() {
     this.domElem = document.querySelector('.menu');
     this.menuItems = [];
-    this.templater = new Templater('./app/templates/menu.tpl');
+    this.templater = Templater.getInstance();
   }
 
   prepareData = (data) => {
@@ -16,15 +16,10 @@ export class MenuView {
     });
   };
 
-  render = (items, onSelect) => {
+  async render(items, onSelect) {
     this.domElem.innerHTML = '';
     console.log(items);
-    this.domElem.innerHTML = this.templater.getHTML(this.prepareData(items));
-    // items.forEach((x, i) => {
-    //   this.domElem.innerHTML += `
-    //     <li class="item-${i} menu-items"><a class="item-link-${i}">${x}</a></li>
-    // `;
-    // });
+    this.domElem.innerHTML = await this.templater.getHTML(this.prepareData(items), 'menu');
     this.addListeners(onSelect);
   };
 

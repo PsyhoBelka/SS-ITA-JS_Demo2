@@ -6,3 +6,6 @@ fetch(`${API_URL}/categories`).then(data => data.json()).then(json => console.lo
 
 const menuController = new MenuController();
 menuController.showMenu();
+
+//show that tpl was cashed
+// window.menu=menuController;
