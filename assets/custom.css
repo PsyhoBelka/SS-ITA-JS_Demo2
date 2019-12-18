@@ -22,3 +22,11 @@ hr.under-header-divider {
     color: #0e6dcd;
     text-decoration: underline;
 }
+.item-properties{
+    /*max-width: 100px;*/
+    /*width: fit-content;*/
+}
+
+.item-properties p{
+    margin: 2px;
+}

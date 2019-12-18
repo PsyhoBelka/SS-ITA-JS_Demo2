@@ -10,7 +10,8 @@
       "color": "orange",
       "breed": "siamian",
       "is_sterile": true,
-      "hair": "long"
+      "hair": "long",
+      "image":"https://lh3.googleusercontent.com/ykuq3KjWWVgwt9fV1zh1ZzAhXJF6pKV5tbUGH0BZIBBP5yIICcavfO-knvLifR1rv0uBiEnlngw=w640-h400-e365"
     },
     {
       "id": 102,
@@ -22,7 +23,8 @@
       "color": "orange",
       "breed": "british",
       "is_sterile": true,
-      "hair": "medium"
+      "hair": "medium",
+      "image":"https://sm.mashable.com/mashable_sea/photo/default/man-fakes-death-cat-q6u_2z9w.png"
     },
     {
       "id": 103,
@@ -34,7 +36,8 @@
       "color": "gray",
       "breed": "siamian",
       "is_sterile": false,
-      "hair": "long"
+      "hair": "long",
+      "image":"https://i.imgur.com/7aFH8GK.jpg"
     },
     {
       "id": 104,
@@ -46,7 +49,8 @@
       "color": "black",
       "breed": "persikus",
       "is_sterile": false,
-      "hair": "looooong"
+      "hair": "looooong",
+      "image":"https://images-cdn.9gag.com/photo/a3Q5VW5_460s.jpg"
     },
     {
       "id": 105,
@@ -58,7 +62,8 @@
       "color": "red",
       "breed": "podvorotikus",
       "is_sterile": true,
-      "hair": "short"
+      "hair": "short",
+      "image":"https://i.imgur.com/ewTEIUm.jpg"
     },
     {
       "id": 106,
@@ -70,7 +75,8 @@
       "color": "izumrud",
       "breed": "godlike",
       "is_sterile": false,
-      "hair": "medium"
+      "hair": "medium",
+      "image":""
     },
     {
       "id": 107,
@@ -82,7 +88,8 @@
       "color": "orange",
       "breed": "domashnii",
       "is_sterile": true,
-      "hair": "medium"
+      "hair": "medium",
+      "image":"https://pbs.twimg.com/media/BICX1rCCUAAPtDE.jpg"
     },
     {
       "id": 108,
@@ -94,7 +101,8 @@
       "color": "white",
       "breed": "lisii",
       "is_sterile": false,
-      "hair": "long"
+      "hair": "long",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNatR_CJ95aNNdfIeLn4pXldUCDPV9YFNuUVa2_I8PzMbkdmLj&s"
     },
     {
       "id": 109,
@@ -106,7 +114,8 @@
       "color": "gray-sepia",
       "breed": "projorkus",
       "is_sterile": true,
-      "hair": "long"
+      "hair": "long",
+      "image":"https://img.gadgethacks.com/img/70/34/63541893340122/0/prank-your-friends-with-random-cat-facts-text-messages.1280x600.jpg"
     },
     {
       "id": 110,
@@ -118,7 +127,8 @@
       "color": "orange",
       "breed": "siamian",
       "is_sterile": true,
-      "hair": "long"
+      "hair": "long",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_w0aqNh66GCleiJFitQGA8OjkAWRKKPbR4KlXnY8VqoE81jO-&s"
     },
     {
       "id": 111,
@@ -130,7 +140,8 @@
       "color": "orange",
       "breed": "siamian",
       "hair": "short",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"https://i.dailymail.co.uk/1s/2019/11/23/09/21370544-7717313-image-a-1_1574501083030.jpg"
     },
     {
       "id": 112,
@@ -142,7 +153,8 @@
       "color": "gryaznii",
       "breed": "ovcharka",
       "hair": "short",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"https://images2.minutemediacdn.com/image/upload/c_crop,h_1192,w_2122,x_0,y_74/f_auto,q_auto,w_1100/v1575329078/shape/mentalfloss/609640-gettyimages-802480150.jpg"
     },
     {
       "id": 113,
@@ -154,7 +166,8 @@
       "color": "gryaznii",
       "breed": "doberman",
       "hair": "short",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyDv01rA0PjVdNgnlOUq7spDDfnie_y9CuyZefSFzmmUH4hV3z2g&s"
     },
     {
       "id": 114,
@@ -166,7 +179,8 @@
       "color": "black",
       "breed": "doberman",
       "hair": "medium",
-      "is_sterile": true
+      "is_sterile": true,
+      "image":"https://cdn.royalcanin-weshare-online.io/GvqPH2YBIYfdNSoCoAgj/v1/bd18bl-bernese-mountain-dog-adult-standing"
     },
     {
       "id": 115,
@@ -178,7 +192,8 @@
       "color": "white",
       "breed": "doberman",
       "hair": "short",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1094874726.png?crop=0.542xw:0.814xh;0.0472xw,0.127xh&resize=640:*"
     },
     {
       "id": 116,
@@ -190,7 +205,8 @@
       "color": "gray",
       "breed": "doberman",
       "hair": "short",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"https://cdn.editorchoice.com/wp-content/uploads/2019/06/dogtilt.jpg"
     },
     {
       "id": 117,
@@ -202,19 +218,21 @@
       "color": "white",
       "breed": "shpitc",
       "hair": "long",
-      "is_sterile": true
+      "is_sterile": true,
+      "image":"https://i.guim.co.uk/img/media/d6fe2d265ac0b06b00f687f6c25ba9c32b57ac37/0_164_5400_3240/master/5400.jpg?width=300&quality=85&auto=format&fit=max&s=26062d3c714347a4e124629f7a9f6427"
     },
     {
       "id": 118,
       "species": "dog",
       "price": 393.45,
-      "gender": "frmale",
+      "gender": "female",
       "weight": 9,
       "birth_date": 1424583118146,
       "color": "black",
       "breed": "pudel",
       "hair": "long",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"https://i.guim.co.uk/img/media/bc74ed32d95a60ec995bbb3270d7dfd2e538ea41/0_146_5400_3240/master/5400.jpg?width=300&quality=85&auto=format&fit=max&s=fc5fddf30748af1e0d53f3523d3a2478"
     },
     {
       "id": 119,
@@ -226,7 +244,8 @@
       "color": "brown",
       "breed": "serbernar",
       "hair": "looooong",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"http://www.labradorretrieverguide.com/wp-content/uploads/2014/09/Study-Shows-Electronic-Shock-Collars-Stress-Your-Labradors.jpg"
     },
     {
       "id": 120,
@@ -238,7 +257,8 @@
       "color": "yellow",
       "breed": "speedy",
       "hair": "medium",
-      "is_sterile": false
+      "is_sterile": false,
+      "image":"https://cdn.editorchoice.com/wp-content/uploads/2019/06/dogtilt.jpg"
     },
     {
       "id": 121,
@@ -250,7 +270,8 @@
       "color": "orange",
       "breed": "ara",
       "type":"predator",
-      "activity": "day"
+      "activity": "day",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFdh8jSC03Uv6etXCF-EBmmq-rHX0MT52pHrMqtLCa_DUSbCh-&s"
     },
     {
       "id": 122,
@@ -262,7 +283,8 @@
       "color": "yellow",
       "breed": "ara",
       "type":"",
-      "activity":"day"
+      "activity":"day",
+      "image":"https://static01.nyt.com/images/2019/10/10/climate/10cli-birds-stillpromo/10cli-birds-stillpromo-square640-v2.jpg"
     },
     {
       "id": 123,
@@ -274,7 +296,8 @@
       "color": "green",
       "breed": "ara",
       "type":"singing",
-      "activity":"day"
+      "activity":"day",
+      "image":"https://image.sciencenordic.com/1411644.jpg?imageId=1411644&width=480&height=274"
     },
     {
       "id": 124,
@@ -286,7 +309,8 @@
       "color": "white",
       "breed": "sapsan",
       "type":"waterfowl",
-      "activity":"day"
+      "activity":"day",
+      "image":"https://www.sciencemag.org/sites/default/files/styles/inline__450w__no_aspect/public/pigeon_1280p.jpg?itok=BXz2SK4_"
     },
     {
       "id": 125,
@@ -298,7 +322,8 @@
       "color": "black",
       "breed": "scopa",
       "type":"predator",
-      "activity":"night"
+      "activity":"night",
+      "image":"https://www.telegraph.co.uk/content/dam/science/2016/10/27/72790734_Common_Swift_news-xlarge_trans_NvBQzQNjv4BqWuL8nu4Tijr4nmSDoV6jAGoLvOn0K4enogvPcVjoYP0.jpg"
     },
     {
       "id": 126,
@@ -310,7 +335,8 @@
       "color": "white",
       "breed": "stork",
       "type":"chicken",
-      "activity":"day"
+      "activity":"day",
+      "image":"https://www.medicalnewstoday.com/content/images/articles/326/326420/sparrow-on-a-stump.jpg"
     },
     {
       "id": 127,
@@ -322,7 +348,8 @@
       "color": "blue",
       "breed": "rook",
       "type":"predator",
-      "activity":"day"
+      "activity":"day",
+      "image":"https://bloximages.newyork1.vip.townnews.com/mycouriertribune.com/content/tncms/assets/v3/editorial/6/00/600b2c39-a091-5200-9c84-acdf880ff745/5d69599f8f9b2.image.jpg?resize=1200%2C751"
     },
     {
       "id": 128,
@@ -334,7 +361,8 @@
       "color": "white",
       "breed": "crane",
       "type":"waterfowl",
-      "activity":"day"
+      "activity":"day",
+      "image":"https://image.sciencenordic.com/1411644.jpg?imageId=1411644&width=480&height=274"
     },
     {
       "id": 129,
@@ -346,7 +374,8 @@
       "color": "yellow",
       "breed": "crown",
       "type":"singing",
-      "activity":"day"
+      "activity":"day",
+      "image":"https://cdn.pixabay.com/photo/2017/03/13/10/25/hummingbird-2139279_960_720.jpg"
     },
     {
       "id": 130,
@@ -358,11 +387,12 @@
       "color": "gray",
       "breed": "goose",
       "type":"singing",
-      "activity":"night"
+      "activity":"night",
+      "image":"https://files.plytix.com/api/v1.1/file/public_files/pim/assets/10/0d/8b/59/598b0d1097b192147b165b73/images/61/a2/8d/5a/5a8da26106c1e7045523a917/6130403-warmnordic-accessories-beakbird-decoration-lazy-snipe-1392x1392.jpg"
     },
     {
       "id": 131,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "male",
       "weight": 5.4,
@@ -370,11 +400,12 @@
       "color": "gray",
       "breed": "shark",
       "type":"brackish",
-      "temper":"predator"
+      "temper":"predator",
+      "image":"https://avatanplus.com/files/resources/mid/5abfb93e275091627ceb9ad1.png"
     },
     {
       "id": 131,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -382,11 +413,12 @@
       "color": "white",
       "breed": "ruff",
       "type":"brackish",
-      "temper":"predator"
+      "temper":"predator",
+      "image":"https://d2skuhm0vrry40.cloudfront.net/2019/articles/2019-10-17-13-26/Fortnite_Flopper.jpg/EG11/resize/256x-1/quality/65/format/jpg"
     },
     {
       "id": 132,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -394,11 +426,12 @@
       "color": "brown",
       "breed": "trout",
       "type":"brackish",
-      "temper":"predator"
+      "temper":"predator",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5t7AhDTm32giZ4CaLK1qlKqXrjppsyzbPV1zn-1z2VQIS1WLF&s"
     },
     {
       "id": 133,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -406,11 +439,12 @@
       "color": "red",
       "breed": "eel",
       "type":"limnetic",
-      "temper":"peacefull"
+      "temper":"peacefull",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2AYz_9Dh4obdPBcdQdazbWGtAmp9Pc0XNO4TudVAcenbnVYDnsA&s"
     },
     {
       "id": 134,
-      "species": "bird",
+      "species": "fish",
       "price": 1224.56,
       "gender": "male",
       "weight": 3.4,
@@ -418,11 +452,12 @@
       "color": "black",
       "breed": "moray",
       "type":"limnetic",
-      "temper":"peacefull"
+      "temper":"peacefull",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqcbw-D6hoyu0jHpy3crGzYko5iB3kOEUqtPOqaH0UDyJnCOmyaA&s"
     },
     {
       "id": 135,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -430,11 +465,12 @@
       "color": "blue",
       "breed": "bream",
       "type":"limnetic",
-      "temper":"predator"
+      "temper":"predator",
+      "image":"https://images-na.ssl-images-amazon.com/images/I/61yVvZLkTuL._CR204,0,1224,1224_UX256.jpg"
     },
     {
       "id": 136,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -442,11 +478,12 @@
       "color": "",
       "breed": "",
       "type":"",
-      "temper":""
+      "temper":"",
+      "image":"https://a.wattpad.com/useravatar/fishyfishyfish.256.420526.jpg"
     },
     {
       "id": 137,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 32.4,
@@ -454,11 +491,12 @@
       "color": "white",
       "breed": "smelt",
       "type":"brackish",
-      "temper":"peacefull"
+      "temper":"peacefull",
+      "image":"https://cdn130.picsart.com/290595191021201.jpg?c256x256"
     },
     {
       "id": 138,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -466,11 +504,12 @@
       "color": "blue",
       "breed": "ide",
       "type":"limnetic",
-      "temper":"peacefull"
+      "temper":"peacefull",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScq84ZrbOo-6sPEAS37nJBAHw8Q380SFD_C7OIs4P87WLLXyqRAQ&s"
     },
     {
       "id": 139,
-      "species": "bird",
+      "species": "fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -478,11 +517,12 @@
       "color": "green",
       "breed": "piranha",
       "type":"brackish",
-      "temper":"predator"
+      "temper":"predator",
+      "image":"https://www.iconexperience.com/_img/v_collection_png/256x256/shadow/fish.png"
     },
     {
       "id": 140,
-      "species": "bird",
+      "species": "fish",
       "price": 234.78,
       "gender": "male",
       "weight": 30.4,
@@ -490,7 +530,8 @@
       "color": "brown",
       "breed": "whale",
       "type":"brackish",
-      "temper":"predator"
+      "temper":"predator",
+      "image":"http://www.flashdrives.ru/products_pictures/p017.jpg"
     }
   ]
 }
