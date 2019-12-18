@@ -1,25 +1,26 @@
-import { Templater } from '../Templater.js';
+import { MenuTemplate } from './MenuTemplate.js';
 
 export class MenuView {
   constructor() {
     this.domElem = document.querySelector('.menu');
     this.menuItems = [];
-    this.templater = new Templater();
+    this.template = new MenuTemplate();
   }
 
   prepareData = (data) => {
     return data.map((x, i) => {
       return {
-        index: i,
-        name: x,
+        menuItemIndex: i,
+        menuItemName: x,
       };
     });
   };
 
-  async render(items, onSelect) {
+  render(items, onSelect) {
     this.domElem.innerHTML = '';
-    console.log(this.templater);
-    this.domElem.innerHTML = await this.templater.getHTML(this.prepareData(items), 'menu');
+    console.log(items);
+    console.log(this.prepareData(items));
+    this.domElem.innerHTML = this.template.getHtml(this.prepareData(items));
     this.addListeners(onSelect);
   };
 

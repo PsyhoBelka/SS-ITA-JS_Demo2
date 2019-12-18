@@ -13,8 +13,6 @@ export class MenuController {
   };
 
   selectCategory = (ev) => {
-    console.log(this);
-    console.log(ev);
-    console.log(ev.target);
+    console.log(`You select ${ev.target.innerText}`);
   };
 }
