@@ -23,7 +23,7 @@ export class ItemsGridTemplate {
                                 <p>Age:</p>
                             </div>
                             <div class="item_properties">
-                                <p>${price}</p>
+                                <p>$${price}</p>
                                 <p>${gender}</p>
                                 <p>${((Date.now() - birth_date) / 1000 / 60 / 60 / 24 / 365).toFixed(0)} yr</p>
                             </div>
