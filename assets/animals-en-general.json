@@ -2,7 +2,7 @@
   "animals": [
     {
       "id": 301,
-      "species": "cat",
+      "species": "Cat",
       "price": 600,
       "gender": "male",
       "weight": 4,
@@ -15,7 +15,7 @@
     },
     {
       "id": 302,
-      "species": "cat",
+      "species": "Cat",
       "price": 600,
       "gender": "female",
       "weight": 3,
@@ -28,7 +28,7 @@
     },
     {
       "id": 303,
-      "species": "cat",
+      "species": "Cat",
       "price": 700,
       "gender": "male",
       "weight": 2,
@@ -40,7 +40,7 @@
     },
     {
       "id": 304,
-      "species": "cat",
+      "species": "Cat",
       "price": 350,
       "gender": "female",
       "weight": 0.5,
@@ -53,7 +53,7 @@
     },
     {
       "id": 305,
-      "species": "cat",
+      "species": "Cat",
       "price": 150,
       "gender": "female",
       "weight": 4,
@@ -66,7 +66,7 @@
     },
     {
       "id": 306,
-      "species": "cat",
+      "species": "Cat",
       "price": 200,
       "gender": "male",
       "weight": 1,
@@ -79,7 +79,7 @@
     },
     {
       "id": 307,
-      "species": "cat",
+      "species": "Cat",
       "price": 500,
       "gender": "male",
       "weight": 0.5,
@@ -92,7 +92,7 @@
     },
     {
       "id": 308,
-      "species": "cat",
+      "species": "Cat",
       "price": 450,
       "gender": "male",
       "weight": 6,
@@ -105,7 +105,7 @@
     },
     {
       "id": 309,
-      "species": "cat",
+      "species": "Cat",
       "price": 400,
       "gender": "male",
       "weight": 5,
@@ -118,7 +118,7 @@
     },
     {
       "id": 310,
-      "species": "cat",
+      "species": "Cat",
       "price": 600,
       "gender": "female",
       "weight": 4,
@@ -131,7 +131,7 @@
     },
     {
       "id": 311,
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "female",
       "weight": 6,
@@ -143,7 +143,7 @@
     },
     {
       "id": 312,
-      "species": "dog",
+      "species": "Dog",
       "price": 1500,
       "gender": "female",
       "weight": 7,
@@ -155,7 +155,7 @@
     },
     {
       "id": 313,
-      "species": "dog",
+      "species": "Dog",
       "price": 6000,
       "gender": "male",
       "weight": 8,
@@ -167,7 +167,7 @@
     },
     {
       "id": 314,
-      "species": "dog",
+      "species": "Dog",
       "price": 450,
       "gender": "male",
       "weight": 4,
@@ -179,7 +179,7 @@
     },
     {
       "id": 315,
-      "species": "dog",
+      "species": "Dog",
       "price": 700,
       "gender": "female",
       "weight": 10,
@@ -191,7 +191,7 @@
     },
     {
       "id": 316,
-      "species": "dog",
+      "species": "Dog",
       "price": 900,
       "gender": "female",
       "weight": 20,
@@ -203,7 +203,7 @@
     },
     {
       "id": 317,
-      "species": "dog",
+      "species": "Dog",
       "price": 400,
       "gender": "male",
       "weight": 1,
@@ -215,7 +215,7 @@
     },
     {
       "id": 318,
-      "species": "dog",
+      "species": "Dog",
       "price": 100,
       "gender": "male",
       "weight": 7,
@@ -227,7 +227,7 @@
     },
     {
       "id": 319,
-      "species": "dog",
+      "species": "Dog",
       "price": 800,
       "gender": "male",
       "weight": 9.1,
@@ -239,7 +239,7 @@
     },
     {
       "id": 320,
-      "species": "dog",
+      "species": "Dog",
       "price": 450,
       "gender": "female",
       "weight": 4,
@@ -251,7 +251,7 @@
     },
     {
       "id": 321,
-      "species": "bird",
+      "species": "Bird",
       "price": 0.105,
       "gender": "male",
       "weight": 300,
@@ -264,7 +264,7 @@
     },
     {
       "id": 322,
-      "species": "bird",
+      "species": "Bird",
       "price": 10,
       "gender": "female",
       "weight": 0.02,
@@ -277,7 +277,7 @@
     },
     {
       "id": 323,
-      "species": "bird",
+      "species": "Bird",
       "price": 1,
       "gender": "female",
       "weight": 0.5,
@@ -290,7 +290,7 @@
     },
     {
       "id": 324,
-      "species": "bird",
+      "species": "Bird",
       "price": 12,
       "gender": "female",
       "weight": 0.08,
@@ -303,7 +303,7 @@
     },
     {
       "id": 325,
-      "species": "bird",
+      "species": "Bird",
       "price": 4,
       "gender": "female",
       "weight": 0.6,
@@ -316,7 +316,7 @@
     },
     {
       "id": 326,
-      "species": "bird",
+      "species": "Bird",
       "price": 10,
       "gender": "male",
       "weight": 0.1,
@@ -329,7 +329,7 @@
     },
     {
       "id": 327,
-      "species": "bird",
+      "species": "Bird",
       "price": 5,
       "gender": "male",
       "weight": 0.4,
@@ -342,7 +342,7 @@
     },
     {
       "id": 328,
-      "species": "bird",
+      "species": "Bird",
       "price": 9,
       "gender": "female",
       "weight": 0.87,
@@ -355,7 +355,7 @@
     },
     {
       "id": 329,
-      "species": "bird",
+      "species": "Bird",
       "price": 70,
       "gender": "male",
       "weight": 0.08,
@@ -368,7 +368,7 @@
     },
     {
       "id": 330,
-      "species": "bird",
+      "species": "Bird",
       "price": 40,
       "gender": "male",
       "weight": 0.04,
@@ -381,7 +381,7 @@
     },
     {
       "id": 331,
-      "species": "fish",
+      "species": "Fish",
       "price": 60,
       "gender": "male",
       "weight": 1.1,
@@ -394,7 +394,7 @@
     },
     {
       "id": 332,
-      "species": "fish",
+      "species": "Fish",
       "price": 100,
       "gender": "female",
       "weight": 0.505,
@@ -407,7 +407,7 @@
     },
     {
       "id": 333,
-      "species": "fish",
+      "species": "Fish",
       "price": 70,
       "gender": "male",
       "weight": 0.146,
@@ -420,7 +420,7 @@
     },
     {
       "id": 334,
-      "species": "fish",
+      "species": "Fish",
       "price": 40,
       "gender": "female",
       "weight": 0.42,
@@ -433,7 +433,7 @@
     },
     {
       "id": 335,
-      "species": "fish",
+      "species": "Fish",
       "price": 10,
       "gender": "male",
       "weight": 0.101,
@@ -446,7 +446,7 @@
     },
     {
       "id": 336,
-      "species": "fish",
+      "species": "Fish",
       "price": 15,
       "gender": "female",
       "weight": 0.1,
@@ -459,7 +459,7 @@
     },
     {
       "id": 337,
-      "species": "fish",
+      "species": "Fish",
       "price": 15,
       "gender": "male",
       "weight": 0.2,
@@ -472,7 +472,7 @@
     },
     {
       "id": 338,
-      "species": "fish",
+      "species": "Fish",
       "price": 90,
       "gender": "male",
       "weight": 0.3,
@@ -485,7 +485,7 @@
     },
     {
       "id": 339,
-      "species": "fish",
+      "species": "Fish",
       "price": 15,
       "gender": "male",
       "weight": 0.3,
@@ -498,7 +498,7 @@
     },
     {
       "id": 340,
-      "species": "fish",
+      "species": "Fish",
       "price": 70,
       "gender": "female",
       "weight": 0.3,
@@ -511,7 +511,7 @@
     },
     {
       "id": 401,
-      "species": "cat",
+      "species": "Cat",
       "price": 300.01,
       "gender": "male",
       "weight": 7,
@@ -524,7 +524,7 @@
     },
     {
       "id": 402,
-      "species": "cat",
+      "species": "Cat",
       "price": 399.89,
       "gender": "female",
       "weight": 8.4,
@@ -537,7 +537,7 @@
     },
     {
       "id": 403,
-      "species": "cat",
+      "species": "Cat",
       "price": 399.99,
       "gender": "male",
       "weight": 7.1,
@@ -550,7 +550,7 @@
     },
     {
       "id": 404,
-      "species": "cat",
+      "species": "Cat",
       "price": 399.99,
       "gender": "male",
       "weight": 9.4,
@@ -563,7 +563,7 @@
     },
     {
       "id": 405,
-      "species": "cat",
+      "species": "Cat",
       "price": 901.01,
       "gender": "female",
       "weight": 7.1,
@@ -576,7 +576,7 @@
     },
     {
       "id": 406,
-      "species": "cat",
+      "species": "Cat",
       "price": 101,
       "gender": "male",
       "weight": 5,
@@ -589,7 +589,7 @@
     },
     {
       "id": 407,
-      "species": "cat",
+      "species": "Cat",
       "price": 202,
       "gender": "male",
       "weight": 3,
@@ -602,7 +602,7 @@
     },
     {
       "id": 408,
-      "species": "cat",
+      "species": "Cat",
       "price": 202,
       "gender": "male",
       "weight": 6.5,
@@ -615,7 +615,7 @@
     },
     {
       "id": 409,
-      "species": "cat",
+      "species": "Cat",
       "price": 302.5,
       "gender": "female",
       "weight": 6.5,
@@ -628,7 +628,7 @@
     },
     {
       "id": 410,
-      "species": "cat",
+      "species": "Cat",
       "price": 299.99,
       "gender": "male",
       "weight": 6,
@@ -641,7 +641,7 @@
     },
     {
       "id": 411,
-      "species": "dog",
+      "species": "Dog",
       "price": 199.99,
       "gender": "male",
       "weight": 7,
@@ -654,7 +654,7 @@
     },
     {
       "id": 412,
-      "species": "dog",
+      "species": "Dog",
       "price": 300.01,
       "gender": "female",
       "weight": 2.5,
@@ -667,7 +667,7 @@
     },
     {
       "id": 413,
-      "species": "dog",
+      "species": "Dog",
       "price": 100,
       "gender": "male",
       "weight": 2.5,
@@ -680,7 +680,7 @@
     },
     {
       "id": 414,
-      "species": "dog",
+      "species": "Dog",
       "price": 300.55,
       "gender": "female",
       "weight": 3,
@@ -693,7 +693,7 @@
     },
     {
       "id": 415,
-      "species": "dog",
+      "species": "Dog",
       "price": 999.99,
       "gender": "female",
       "weight": 4,
@@ -706,7 +706,7 @@
     },
     {
       "id": 416,
-      "species": "dog",
+      "species": "Dog",
       "price": 1233.75,
       "gender": "male",
       "weight": 7,
@@ -719,7 +719,7 @@
     },
     {
       "id": 417,
-      "species": "dog",
+      "species": "Dog",
       "price": 2099.99,
       "gender": "female",
       "weight": 10,
@@ -732,7 +732,7 @@
     },
     {
       "id": 418,
-      "species": "dog",
+      "species": "Dog",
       "price": 403.99,
       "gender": "male",
       "weight": 15,
@@ -745,7 +745,7 @@
     },
     {
       "id": 419,
-      "species": "dog",
+      "species": "Dog",
       "price": 899.99,
       "gender": "female",
       "weight": 2.35,
@@ -758,7 +758,7 @@
     },
     {
       "id": 420,
-      "species": "dog",
+      "species": "Dog",
       "price": 899.99,
       "gender": "male",
       "weight": 4.5,
@@ -771,7 +771,7 @@
     },
     {
       "id": 421,
-      "species": "bird",
+      "species": "Bird",
       "price": 199.99,
       "gender": "female",
       "weight": 0.1,
@@ -784,7 +784,7 @@
     },
     {
       "id": 422,
-      "species": "bird",
+      "species": "Bird",
       "price": 299.99,
       "gender": "male",
       "weight": 0.15,
@@ -797,7 +797,7 @@
     },
     {
       "id": 423,
-      "species": "bird",
+      "species": "Bird",
       "price": 99.99,
       "gender": "male",
       "weight": 0.3,
@@ -810,7 +810,7 @@
     },
     {
       "id": 424,
-      "species": "bird",
+      "species": "Bird",
       "price": 999.99,
       "gender": "female",
       "weight": 2.8,
@@ -823,7 +823,7 @@
     },
     {
       "id": 425,
-      "species": "bird",
+      "species": "Bird",
       "price": 1001.01,
       "gender": "female",
       "weight": 3,
@@ -836,7 +836,7 @@
     },
     {
       "id": 426,
-      "species": "bird",
+      "species": "Bird",
       "price": 59.99,
       "gender": "male",
       "weight": 3.4,
@@ -849,7 +849,7 @@
     },
     {
       "id": 427,
-      "species": "bird",
+      "species": "Bird",
       "price": 1999.99,
       "gender": "male",
       "weight": 4,
@@ -862,7 +862,7 @@
     },
     {
       "id": 428,
-      "species": "bird",
+      "species": "Bird",
       "price": 399.09,
       "gender": "male",
       "weight": 0.8,
@@ -875,7 +875,7 @@
     },
     {
       "id": 429,
-      "species": "bird",
+      "species": "Bird",
       "price": 999.09,
       "gender": "female",
       "weight": 0.8,
@@ -888,7 +888,7 @@
     },
     {
       "id": 430,
-      "species": "bird",
+      "species": "Bird",
       "price": 6000.01,
       "gender": "male",
       "weight": 0.8,
@@ -901,7 +901,7 @@
     },
     {
       "id": 431,
-      "species": "fish",
+      "species": "Fish",
       "price": 300.01,
       "gender": "male",
       "weight": 0.1,
@@ -914,7 +914,7 @@
     },
     {
       "id": 432,
-      "species": "fish",
+      "species": "Fish",
       "price": 499.99,
       "gender": "male",
       "weight": 0.2,
@@ -927,7 +927,7 @@
     },
     {
       "id": 433,
-      "species": "fish",
+      "species": "Fish",
       "price": 299.99,
       "gender": "female",
       "weight": 0.05,
@@ -940,7 +940,7 @@
     },
     {
       "id": 434,
-      "species": "fish",
+      "species": "Fish",
       "price": 399.01,
       "gender": "male",
       "weight": 0.12,
@@ -953,7 +953,7 @@
     },
     {
       "id": 435,
-      "species": "fish",
+      "species": "Fish",
       "price": 99.19,
       "gender": "male",
       "weight": 0.4,
@@ -966,7 +966,7 @@
     },
     {
       "id": 436,
-      "species": "fish",
+      "species": "Fish",
       "price": 999.09,
       "gender": "male",
       "weight": 0.1,
@@ -979,7 +979,7 @@
     },
     {
       "id": 437,
-      "species": "fish",
+      "species": "Fish",
       "price": 78.88,
       "gender": "male",
       "weight": 0.22,
@@ -992,7 +992,7 @@
     },
     {
       "id": 438,
-      "species": "fish",
+      "species": "Fish",
       "price": 29.99,
       "gender": "female",
       "weight": 0.18,
@@ -1005,7 +1005,7 @@
     },
     {
       "id": 439,
-      "species": "fish",
+      "species": "Fish",
       "price": 29.99,
       "gender": "male",
       "weight": 0.18,
@@ -1018,7 +1018,7 @@
     },
     {
       "id": 440,
-      "species": "fish",
+      "species": "Fish",
       "price": 190.9,
       "gender": "female",
       "weight": 20.3,
@@ -1031,7 +1031,7 @@
     },
     {
       "id": 201,
-      "species": "cat",
+      "species": "Cat",
       "price": 2000,
       "gender": "female",
       "weight": 1.6,
@@ -1044,7 +1044,7 @@
     },
     {
       "id": 202,
-      "species": "cat",
+      "species": "Cat",
       "price": 2200,
       "gender": "female",
       "weight": 1.4,
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 203,
-      "species": "cat",
+      "species": "Cat",
       "price": 2300,
       "gender": "female",
       "weight": 2.8,
@@ -1070,7 +1070,7 @@
     },
     {
       "id": 204,
-      "species": "cat",
+      "species": "Cat",
       "price": 2560,
       "gender": "male",
       "weight": 3.8,
@@ -1083,7 +1083,7 @@
     },
     {
       "id": 205,
-      "species": "cat",
+      "species": "Cat",
       "price": 2420,
       "gender": "male",
       "weight": 1.9,
@@ -1096,7 +1096,7 @@
     },
     {
       "id": 206,
-      "species": "cat",
+      "species": "Cat",
       "price": 2320,
       "gender": "female",
       "weight": 2.3,
@@ -1109,7 +1109,7 @@
     },
     {
       "id": 207,
-      "species": "cat",
+      "species": "Cat",
       "price": 2220,
       "gender": "male",
       "weight": 2.9,
@@ -1122,7 +1122,7 @@
     },
     {
       "id": 208,
-      "species": "cat",
+      "species": "Cat",
       "price": 2840,
       "gender": "male",
       "weight": 4.7,
@@ -1135,7 +1135,7 @@
     },
     {
       "id": 209,
-      "species": "cat",
+      "species": "Cat",
       "price": 2710,
       "gender": "female",
       "weight": 3.3,
@@ -1148,7 +1148,7 @@
     },
     {
       "id": 210,
-      "species": "cat",
+      "species": "Cat",
       "price": 2990,
       "gender": "male",
       "weight": 1.4,
@@ -1161,7 +1161,7 @@
     },
     {
       "id": 211,
-      "species": "dog",
+      "species": "Dog",
       "price": 5000,
       "gender": "male",
       "weight": 20,
@@ -1174,7 +1174,7 @@
     },
     {
       "id": 212,
-      "species": "dog",
+      "species": "Dog",
       "price": 5250,
       "gender": "female",
       "weight": 11,
@@ -1187,7 +1187,7 @@
     },
     {
       "id": 213,
-      "species": "dog",
+      "species": "Dog",
       "price": 5250,
       "gender": "female",
       "weight": 11,
@@ -1200,7 +1200,7 @@
     },
     {
       "id": 213,
-      "species": "dog",
+      "species": "Dog",
       "price": 4750,
       "gender": "male",
       "weight": 7,
@@ -1213,7 +1213,7 @@
     },
     {
       "id": 214,
-      "species": "dog",
+      "species": "Dog",
       "price": 4650,
       "gender": "female",
       "weight": 4,
@@ -1226,7 +1226,7 @@
     },
     {
       "id": 215,
-      "species": "dog",
+      "species": "Dog",
       "price": 4350,
       "gender": "male",
       "weight": 45,
@@ -1239,7 +1239,7 @@
     },
     {
       "id": 216,
-      "species": "dog",
+      "species": "Dog",
       "price": 6350,
       "gender": "female",
       "weight": 29,
@@ -1252,7 +1252,7 @@
     },
     {
       "id": 217,
-      "species": "dog",
+      "species": "Dog",
       "price": 5520,
       "gender": "male",
       "weight": 27,
@@ -1265,7 +1265,7 @@
     },
     {
       "id": 218,
-      "species": "dog",
+      "species": "Dog",
       "price": 5170,
       "gender": "female",
       "weight": 11,
@@ -1278,7 +1278,7 @@
     },
     {
       "id": 219,
-      "species": "dog",
+      "species": "Dog",
       "price": 6120,
       "gender": "female",
       "weight": 31,
@@ -1291,7 +1291,7 @@
     },
     {
       "id": 220,
-      "species": "dog",
+      "species": "Dog",
       "price": 6410,
       "gender": "male",
       "weight": 12,
@@ -1304,7 +1304,7 @@
     },
     {
       "id": 221,
-      "species": "bird",
+      "species": "Bird",
       "price": 550,
       "gender": "female",
       "weight": 0.5,
@@ -1317,7 +1317,7 @@
     },
     {
       "id": 222,
-      "species": "bird",
+      "species": "Bird",
       "price": 450,
       "gender": "female",
       "weight": 0.4,
@@ -1330,7 +1330,7 @@
     },
     {
       "id": 223,
-      "species": "bird",
+      "species": "Bird",
       "price": 340,
       "gender": "female",
       "weight": 0.6,
@@ -1343,7 +1343,7 @@
     },
     {
       "id": 224,
-      "species": "bird",
+      "species": "Bird",
       "price": 680,
       "gender": "male",
       "weight": 0.8,
@@ -1356,7 +1356,7 @@
     },
     {
       "id": 225,
-      "species": "bird",
+      "species": "Bird",
       "price": 880,
       "gender": "male",
       "weight": 0.9,
@@ -1369,7 +1369,7 @@
     },
     {
       "id": 226,
-      "species": "bird",
+      "species": "Bird",
       "price": 410,
       "gender": "male",
       "weight": 0.4,
@@ -1382,7 +1382,7 @@
     },
     {
       "id": 227,
-      "species": "bird",
+      "species": "Bird",
       "price": 3580,
       "gender": "male",
       "weight": 4.4,
@@ -1395,7 +1395,7 @@
     },
     {
       "id": 228,
-      "species": "bird",
+      "species": "Bird",
       "price": 6480,
       "gender": "female",
       "weight": 3.7,
@@ -1408,7 +1408,7 @@
     },
     {
       "id": 229,
-      "species": "bird",
+      "species": "Bird",
       "price": 485,
       "gender": "male",
       "weight": 1.7,
@@ -1421,7 +1421,7 @@
     },
     {
       "id": 230,
-      "species": "bird",
+      "species": "Bird",
       "price": 6455,
       "gender": "female",
       "weight": 4.7,
@@ -1434,7 +1434,7 @@
     },
     {
       "id": 231,
-      "species": "fish",
+      "species": "Fish",
       "price": 50,
       "gender": "male",
       "weight": 0.9,
@@ -1447,7 +1447,7 @@
     },
     {
       "id": 232,
-      "species": "fish",
+      "species": "Fish",
       "price": 70,
       "gender": "female",
       "weight": 1.5,
@@ -1460,7 +1460,7 @@
     },
     {
       "id": 233,
-      "species": "fish",
+      "species": "Fish",
       "price": 40,
       "gender": "male",
       "weight": 1.2,
@@ -1473,7 +1473,7 @@
     },
     {
       "id": 234,
-      "species": "fish",
+      "species": "Fish",
       "price": 75,
       "gender": "male",
       "weight": 5.2,
@@ -1486,7 +1486,7 @@
     },
     {
       "id": 235,
-      "species": "fish",
+      "species": "Fish",
       "price": 80,
       "gender": "male",
       "weight": 3.1,
@@ -1499,7 +1499,7 @@
     },
     {
       "id": 236,
-      "species": "fish",
+      "species": "Fish",
       "price": 65,
       "gender": "female",
       "weight": 1.1,
@@ -1512,7 +1512,7 @@
     },
     {
       "id": 237,
-      "species": "fish",
+      "species": "Fish",
       "price": 195,
       "gender": "female",
       "weight": 2.1,
@@ -1525,7 +1525,7 @@
     },
     {
       "id": 238,
-      "species": "fish",
+      "species": "Fish",
       "price": 45,
       "gender": "female",
       "weight": 2.3,
@@ -1538,7 +1538,7 @@
     },
     {
       "id": 239,
-      "species": "fish",
+      "species": "Fish",
       "price": 215,
       "gender": "female",
       "weight": 1.4,
@@ -1551,7 +1551,7 @@
     },
     {
       "id": 240,
-      "species": "fish",
+      "species": "Fish",
       "price": 70,
       "gender": "female",
       "weight": 1.1,
@@ -1564,7 +1564,7 @@
     },
     {
       "id": 501,
-      "species": "cat",
+      "species": "Cat",
       "price": 250,
       "gender": "male",
       "weight": 4.2,
@@ -1577,7 +1577,7 @@
     },
     {
       "id": 502,
-      "species": "cat",
+      "species": "Cat",
       "price": 500,
       "gender": "male",
       "weight": 5.3,
@@ -1590,7 +1590,7 @@
     },
     {
       "id": 503,
-      "species": "cat",
+      "species": "Cat",
       "price": 400,
       "gender": "female",
       "weight": 7.1,
@@ -1603,7 +1603,7 @@
     },
     {
       "id": 504,
-      "species": "cat",
+      "species": "Cat",
       "price": 600,
       "gender": "female",
       "weight": 4.5,
@@ -1616,7 +1616,7 @@
     },
     {
       "id": 505,
-      "species": "cat",
+      "species": "Cat",
       "price": 400,
       "gender": "male",
       "weight": 5.4,
@@ -1629,7 +1629,7 @@
     },
     {
       "id": 506,
-      "species": "cat",
+      "species": "Cat",
       "price": 700,
       "gender": "male",
       "weight": 7,
@@ -1642,7 +1642,7 @@
     },
     {
       "id": 507,
-      "species": "cat",
+      "species": "Cat",
       "price": 800,
       "gender": "male",
       "weight": 4.5,
@@ -1655,7 +1655,7 @@
     },
     {
       "id": 508,
-      "species": "cat",
+      "species": "Cat",
       "price": 400,
       "gender": "female",
       "weight": 4.4,
@@ -1668,7 +1668,7 @@
     },
     {
       "id": 509,
-      "species": "cat",
+      "species": "Cat",
       "price": 800,
       "gender": "male",
       "weight": 8,
@@ -1681,7 +1681,7 @@
     },
     {
       "id": 510,
-      "species": "cat",
+      "species": "Cat",
       "price": 800,
       "gender": "male",
       "weight": 6,
@@ -1694,7 +1694,7 @@
     },
     {
       "id": 511,
-      "species": "dog",
+      "species": "Dog",
       "price": 800,
       "gender": "male",
       "weight": 31.5,
@@ -1707,7 +1707,7 @@
     },
     {
       "id": 512,
-      "species": "dog",
+      "species": "Dog",
       "price": 700,
       "gender": "male",
       "weight": 25.5,
@@ -1720,7 +1720,7 @@
     },
     {
       "id": 513,
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "female",
       "weight": 18,
@@ -1733,7 +1733,7 @@
     },
     {
       "id": 514,
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "male",
       "weight": 3,
@@ -1746,7 +1746,7 @@
     },
     {
       "id": 515,
-      "species": "dog",
+      "species": "Dog",
       "price": 750,
       "gender": "male",
       "weight": 11.3,
@@ -1759,7 +1759,7 @@
     },
     {
       "id": 516,
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "male",
       "weight": 91,
@@ -1772,7 +1772,7 @@
     },
     {
       "id": 517,
-      "species": "dog",
+      "species": "Dog",
       "price": 700,
       "gender": "female",
       "weight": 20.5,
@@ -1785,7 +1785,7 @@
     },
     {
       "id": 518,
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "male",
       "weight": 5.8,
@@ -1798,7 +1798,7 @@
     },
     {
       "id": 519,
-      "species": "dog",
+      "species": "Dog",
       "price": 1100,
       "gender": "male",
       "weight": 27.3,
@@ -1811,7 +1811,7 @@
     },
     {
       "id": 520,
-      "species": "dog",
+      "species": "Dog",
       "price": 700,
       "gender": "male",
       "weight": 17.3,
@@ -1824,7 +1824,7 @@
     },
     {
       "id": 521,
-      "species": "bird",
+      "species": "Bird",
       "price": 70,
       "gender": "female",
       "weight": 0.029,
@@ -1837,7 +1837,7 @@
     },
     {
       "id": 522,
-      "species": "bird",
+      "species": "Bird",
       "price": 80,
       "gender": "male",
       "weight": 0.024,
@@ -1850,7 +1850,7 @@
     },
     {
       "id": 523,
-      "species": "bird",
+      "species": "Bird",
       "price": 130,
       "gender": "male",
       "weight": 0.09,
@@ -1863,7 +1863,7 @@
     },
     {
       "id": 524,
-      "species": "bird",
+      "species": "Bird",
       "price": 10000,
       "gender": "male",
       "weight": 0.62,
@@ -1876,7 +1876,7 @@
     },
     {
       "id": 525,
-      "species": "bird",
+      "species": "Bird",
       "price": 3400,
       "gender": "female",
       "weight": 4.5,
@@ -1889,7 +1889,7 @@
     },
     {
       "id": 526,
-      "species": "bird",
+      "species": "Bird",
       "price": 1500,
       "gender": "male",
       "weight": 11.7,
@@ -1902,7 +1902,7 @@
     },
     {
       "id": 527,
-      "species": "bird",
+      "species": "Bird",
       "price": 1500,
       "gender": "male",
       "weight": 11.3,
@@ -1915,7 +1915,7 @@
     },
     {
       "id": 528,
-      "species": "bird",
+      "species": "Bird",
       "price": 2000,
       "gender": "male",
       "weight": 0.5,
@@ -1928,7 +1928,7 @@
     },
     {
       "id": 529,
-      "species": "bird",
+      "species": "Bird",
       "price": 150,
       "gender": "female",
       "weight": 0.055,
@@ -1941,7 +1941,7 @@
     },
     {
       "id": 530,
-      "species": "bird",
+      "species": "Bird",
       "price": 750,
       "gender": "male",
       "weight": 0.15,
@@ -1954,7 +1954,7 @@
     },
     {
       "id": 531,
-      "species": "fish",
+      "species": "Fish",
       "price": 75,
       "gender": "male",
       "weight": 0.4,
@@ -1967,7 +1967,7 @@
     },
     {
       "id": 532,
-      "species": "fish",
+      "species": "Fish",
       "price": 40,
       "gender": "male",
       "weight": 0.04,
@@ -1980,7 +1980,7 @@
     },
     {
       "id": 533,
-      "species": "fish",
+      "species": "Fish",
       "price": 25,
       "gender": "male",
       "weight": 0.029,
@@ -1993,7 +1993,7 @@
     },
     {
       "id": 534,
-      "species": "fish",
+      "species": "Fish",
       "price": 30,
       "gender": "female",
       "weight": 0.037,
@@ -2006,7 +2006,7 @@
     },
     {
       "id": 535,
-      "species": "fish",
+      "species": "Fish",
       "price": 40,
       "gender": "male",
       "weight": 0.2,
@@ -2019,7 +2019,7 @@
     },
     {
       "id": 536,
-      "species": "fish",
+      "species": "Fish",
       "price": 67,
       "gender": "male",
       "weight": 0.3,
@@ -2032,7 +2032,7 @@
     },
     {
       "id": 537,
-      "species": "fish",
+      "species": "Fish",
       "price": 20,
       "gender": "female",
       "weight": 0.045,
@@ -2045,7 +2045,7 @@
     },
     {
       "id": 538,
-      "species": "fish",
+      "species": "Fish",
       "price": 28,
       "gender": "male",
       "weight": 0.025,
@@ -2058,7 +2058,7 @@
     },
     {
       "id": 539,
-      "species": "fish",
+      "species": "Fish",
       "price": 40,
       "gender": "male",
       "weight": 1.3,
@@ -2071,7 +2071,7 @@
     },
     {
       "id": 540,
-      "species": "fish",
+      "species": "Fish",
       "price": 10,
       "gender": "female",
       "weight": 0.0005,
@@ -2084,7 +2084,7 @@
     },
     {
       "id": 601,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.1,
       "gender": "male",
       "weight": 0.1,
@@ -2097,7 +2097,7 @@
     },
     {
       "id": 602,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.2,
       "gender": "male",
       "weight": 0.2,
@@ -2110,7 +2110,7 @@
     },
     {
       "id": 603,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.3,
       "gender": "female",
       "weight": 0.3,
@@ -2123,7 +2123,7 @@
     },
     {
       "id": 604,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.4,
       "gender": "male",
       "weight": 0.4,
@@ -2136,7 +2136,7 @@
     },
     {
       "id": 605,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.5,
       "gender": "male",
       "weight": 0.5,
@@ -2149,7 +2149,7 @@
     },
     {
       "id": 606,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.6,
       "gender": "female",
       "weight": 0.6,
@@ -2162,7 +2162,7 @@
     },
     {
       "id": 607,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.7,
       "gender": "male",
       "weight": 0.7,
@@ -2175,7 +2175,7 @@
     },
     {
       "id": 608,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.8,
       "gender": "male",
       "weight": 0.8,
@@ -2188,7 +2188,7 @@
     },
     {
       "id": 609,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.9,
       "gender": "female",
       "weight": 0.9,
@@ -2201,7 +2201,7 @@
     },
     {
       "id": 610,
-      "species": "cat",
+      "species": "Cat",
       "price:": 0.11,
       "gender": "male",
       "weight": 0.11,
@@ -2214,7 +2214,7 @@
     },
     {
       "id": 611,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.5,
       "gender": "male",
       "weight": 0.5,
@@ -2227,7 +2227,7 @@
     },
     {
       "id": 612,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.1,
       "gender": "male",
       "weight": 0.1,
@@ -2240,7 +2240,7 @@
     },
     {
       "id": 613,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.2,
       "gender": "male",
       "weight": 0.2,
@@ -2253,7 +2253,7 @@
     },
     {
       "id": 614,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.3,
       "gender": "female",
       "weight": 0.3,
@@ -2266,7 +2266,7 @@
     },
     {
       "id": 615,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.4,
       "gender": "male",
       "weight": 0.4,
@@ -2279,7 +2279,7 @@
     },
     {
       "id": 616,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.5,
       "gender": "male",
       "weight": 0.5,
@@ -2292,7 +2292,7 @@
     },
     {
       "id": 617,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.6,
       "gender": "female",
       "weight": 0.6,
@@ -2305,7 +2305,7 @@
     },
     {
       "id": 618,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.7,
       "gender": "male",
       "weight": 0.7,
@@ -2318,7 +2318,7 @@
     },
     {
       "id": 619,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.8,
       "gender": "male",
       "weight": 0.8,
@@ -2331,7 +2331,7 @@
     },
     {
       "id": 620,
-      "species": "dog",
+      "species": "Dog",
       "price:": 0.9,
       "gender": "female",
       "weight": 0.9,
@@ -2344,7 +2344,7 @@
     },
     {
       "id": 621,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.5,
       "gender": "female",
       "weight": 0.5,
@@ -2357,7 +2357,7 @@
     },
     {
       "id": 622,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.1,
       "gender": "male",
       "weight": 0.1,
@@ -2370,7 +2370,7 @@
     },
     {
       "id": 623,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.2,
       "gender": "male",
       "weight": 0.2,
@@ -2383,7 +2383,7 @@
     },
     {
       "id": 624,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.3,
       "gender": "female",
       "weight": 0.3,
@@ -2396,7 +2396,7 @@
     },
     {
       "id": 625,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.4,
       "gender": "male",
       "weight": 0.4,
@@ -2409,7 +2409,7 @@
     },
     {
       "id": 626,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.5,
       "gender": "male",
       "weight": 0.5,
@@ -2422,7 +2422,7 @@
     },
     {
       "id": 627,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.6,
       "gender": "female",
       "weight": 0.6,
@@ -2435,7 +2435,7 @@
     },
     {
       "id": 628,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.7,
       "gender": "male",
       "weight": 0.7,
@@ -2448,7 +2448,7 @@
     },
     {
       "id": 629,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.8,
       "gender": "male",
       "weight": 0.8,
@@ -2461,7 +2461,7 @@
     },
     {
       "id": 630,
-      "species": "bird",
+      "species": "Bird",
       "price:": 0.9,
       "gender": "female",
       "weight": 0.9,
@@ -2474,7 +2474,7 @@
     },
     {
       "id": 631,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.5,
       "gender": "male",
       "weight": 0.5,
@@ -2487,7 +2487,7 @@
     },
     {
       "id": 632,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.1,
       "gender": "male",
       "weight": 0.1,
@@ -2501,7 +2501,7 @@
     },
     {
       "id": 633,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.2,
       "gender": "male",
       "weight": 0.2,
@@ -2515,7 +2515,7 @@
     },
     {
       "id": 634,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.3,
       "gender": "female",
       "weight": 0.3,
@@ -2529,7 +2529,7 @@
     },
     {
       "id": 635,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.4,
       "gender": "male",
       "weight": 0.4,
@@ -2543,7 +2543,7 @@
     },
     {
       "id": 636,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.5,
       "gender": "male",
       "weight": 0.5,
@@ -2557,7 +2557,7 @@
     },
     {
       "id": 637,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.6,
       "gender": "female",
       "weight": 0.6,
@@ -2571,7 +2571,7 @@
     },
     {
       "id": 638,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.7,
       "gender": "male",
       "weight": 0.7,
@@ -2585,7 +2585,7 @@
     },
     {
       "id": 639,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.8,
       "gender": "male",
       "weight": 0.8,
@@ -2599,7 +2599,7 @@
     },
     {
       "id": 640,
-      "species": "fish",
+      "species": "Fish",
       "price:": 0.9,
       "gender": "female",
       "weight": 0.9,
@@ -2612,7 +2612,7 @@
       "image": "https://absolutelyfish.com/wp-content/uploads/2018/12/Miniatus-Grouper-300x200.jpg"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 100,
       "gender": "female",
       "weight": 3,
@@ -2625,7 +2625,7 @@
       "color": "white"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 150,
       "gender": "male",
       "weight": 0.5,
@@ -2638,7 +2638,7 @@
       "color": "white"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 120,
       "gender": "female",
       "weight": 2,
@@ -2651,7 +2651,7 @@
       "color": "orange"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 90,
       "gender": "male",
       "weight": 4,
@@ -2664,7 +2664,7 @@
       "color": "brown"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 200,
       "gender": "female",
       "weight": 0.3,
@@ -2677,7 +2677,7 @@
       "color": "brown"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 200,
       "gender": "male",
       "weight": 0.25,
@@ -2690,7 +2690,7 @@
       "color": "orange"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 300,
       "gender": "male",
       "weight": 3,
@@ -2703,7 +2703,7 @@
       "color": "gray"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 350,
       "gender": "female",
       "weight": 3.5,
@@ -2716,7 +2716,7 @@
       "color": "gray"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 600,
       "gender": "female",
       "weight": 0.3,
@@ -2729,7 +2729,7 @@
       "color": "gray"
     },
     {
-      "species": "cat",
+      "species": "Cat",
       "price": 600,
       "gender": "male",
       "weight": 0.3,
@@ -2742,7 +2742,7 @@
       "color": "gray"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 800,
       "gender": "female",
       "weight": 3,
@@ -2756,7 +2756,7 @@
       "color": "orange"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "male",
       "weight": 2,
@@ -2770,7 +2770,7 @@
       "color": "black"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 1200,
       "gender": "female",
       "weight": 2,
@@ -2784,7 +2784,7 @@
       "color": "brown"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 600,
       "gender": "male",
       "weight": 25,
@@ -2798,7 +2798,7 @@
       "color": "black-white"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 1200,
       "gender": "female",
       "weight": 2,
@@ -2812,7 +2812,7 @@
       "color": "black-white"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "male",
       "weight": 2,
@@ -2826,7 +2826,7 @@
       "color": "black-white"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 1500,
       "gender": "female",
       "weight": 0.5,
@@ -2840,7 +2840,7 @@
       "color": "white-brown"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 500,
       "gender": "male",
       "weight": 20,
@@ -2854,7 +2854,7 @@
       "color": "white-brown"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 800,
       "gender": "male",
       "weight": 0.4,
@@ -2868,7 +2868,7 @@
       "color": "brown"
     },
     {
-      "species": "dog",
+      "species": "Dog",
       "price": 1000,
       "gender": "female",
       "weight": 0.3,
@@ -2882,7 +2882,7 @@
       "color": "orange"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 100,
       "gender": "female",
       "weight": 0.01,
@@ -2897,7 +2897,7 @@
       "color": "orange-black"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 100,
       "gender": "male",
       "weight": 0.01,
@@ -2912,7 +2912,7 @@
       "color": "orange-black"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 100,
       "gender": "male",
       "weight": 0.01,
@@ -2927,7 +2927,7 @@
       "color": "orange-black"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 60,
       "gender": "male",
       "weight": 0.01,
@@ -2942,7 +2942,7 @@
       "color": "red"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 60,
       "gender": "male",
       "weight": 0.01,
@@ -2957,7 +2957,7 @@
       "color": "red-black"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 60,
       "gender": "female",
       "weight": 0.01,
@@ -2972,7 +2972,7 @@
       "color": "red"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 300,
       "gender": "female",
       "weight": 0.03,
@@ -2987,7 +2987,7 @@
       "color": "white"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 300,
       "gender": "female",
       "weight": 0.03,
@@ -3002,7 +3002,7 @@
       "color": "white-red"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 300,
       "gender": "male",
       "weight": 0.03,
@@ -3017,7 +3017,7 @@
       "color": "white-red"
     },
     {
-      "species": "fish",
+      "species": "Fish",
       "price": 300,
       "gender": "male",
       "weight": 0.03,
@@ -3032,7 +3032,7 @@
       "color": "white"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 2000,
       "gender": "female",
       "weight": 0.1,
@@ -3046,7 +3046,7 @@
       "color": "green"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 1000,
       "gender": "male",
       "weight": 0.25,
@@ -3060,7 +3060,7 @@
       "color": "green"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 4000,
       "gender": "male",
       "weight": 0.4,
@@ -3074,7 +3074,7 @@
       "color": "gray-red"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 200,
       "gender": "female",
       "weight": 0.1,
@@ -3088,7 +3088,7 @@
       "color": "yellow"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 300,
       "gender": "male",
       "weight": 0.1,
@@ -3102,7 +3102,7 @@
       "color": "red"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 300,
       "gender": "female",
       "weight": 0.1,
@@ -3116,7 +3116,7 @@
       "color": "yellow-black"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 500,
       "gender": "female",
       "weight": 0.15,
@@ -3130,7 +3130,7 @@
       "color": "gray"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 510,
       "gender": "male",
       "weight": 0.15,
@@ -3144,7 +3144,7 @@
       "color": "gray"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 620,
       "gender": "female",
       "weight": 0.15,
@@ -3158,7 +3158,7 @@
       "color": "gray"
     },
     {
-      "species": "bird",
+      "species": "Bird",
       "price": 650,
       "gender": "female",
       "weight": 0.15,
@@ -3173,7 +3173,7 @@
     },
     {
       "id": 101,
-      "species": "cat",
+      "species": "Cat",
       "price": 23.45,
       "gender": "male",
       "weight": 34,
@@ -3186,7 +3186,7 @@
     },
     {
       "id": 102,
-      "species": "cat",
+      "species": "Cat",
       "price": 23.45,
       "gender": "female",
       "weight": 12,
@@ -3199,7 +3199,7 @@
     },
     {
       "id": 103,
-      "species": "cat",
+      "species": "Cat",
       "price": 22.45,
       "gender": "male",
       "weight": 8,
@@ -3212,7 +3212,7 @@
     },
     {
       "id": 104,
-      "species": "cat",
+      "species": "Cat",
       "price": 23.25,
       "gender": "male",
       "weight": 9,
@@ -3225,7 +3225,7 @@
     },
     {
       "id": 105,
-      "species": "cat",
+      "species": "Cat",
       "price": 5.05,
       "gender": "male",
       "weight": 3,
@@ -3238,7 +3238,7 @@
     },
     {
       "id": 106,
-      "species": "cat",
+      "species": "Cat",
       "price": 123.35,
       "gender": "female",
       "weight": 3,
@@ -3251,7 +3251,7 @@
     },
     {
       "id": 107,
-      "species": "cat",
+      "species": "Cat",
       "price": 67.45,
       "gender": "female",
       "weight": 2,
@@ -3264,7 +3264,7 @@
     },
     {
       "id": 108,
-      "species": "cat",
+      "species": "Cat",
       "price": 19.45,
       "gender": "male",
       "weight": 5,
@@ -3277,7 +3277,7 @@
     },
     {
       "id": 109,
-      "species": "cat",
+      "species": "Cat",
       "price": 45.45,
       "gender": "female",
       "weight": 23,
@@ -3290,7 +3290,7 @@
     },
     {
       "id": 110,
-      "species": "cat",
+      "species": "Cat",
       "price": 893.45,
       "gender": "female",
       "weight": 2,
@@ -3303,7 +3303,7 @@
     },
     {
       "id": 111,
-      "species": "dog",
+      "species": "Dog",
       "price": 893.45,
       "gender": "male",
       "weight": 19,
@@ -3316,7 +3316,7 @@
     },
     {
       "id": 112,
-      "species": "dog",
+      "species": "Dog",
       "price": 293.45,
       "gender": "female",
       "weight": 10,
@@ -3329,7 +3329,7 @@
     },
     {
       "id": 113,
-      "species": "dog",
+      "species": "Dog",
       "price": 1293.45,
       "gender": "male",
       "weight": 16,
@@ -3342,7 +3342,7 @@
     },
     {
       "id": 114,
-      "species": "dog",
+      "species": "Dog",
       "price": 193.45,
       "gender": "female",
       "weight": 12,
@@ -3355,7 +3355,7 @@
     },
     {
       "id": 115,
-      "species": "dog",
+      "species": "Dog",
       "price": 793.45,
       "gender": "female",
       "weight": 12,
@@ -3368,7 +3368,7 @@
     },
     {
       "id": 116,
-      "species": "dog",
+      "species": "Dog",
       "price": 893.45,
       "gender": "female",
       "weight": 11,
@@ -3381,7 +3381,7 @@
     },
     {
       "id": 117,
-      "species": "dog",
+      "species": "Dog",
       "price": 293.45,
       "gender": "male",
       "weight": 6,
@@ -3394,7 +3394,7 @@
     },
     {
       "id": 118,
-      "species": "dog",
+      "species": "Dog",
       "price": 393.45,
       "gender": "female",
       "weight": 9,
@@ -3407,7 +3407,7 @@
     },
     {
       "id": 119,
-      "species": "dog",
+      "species": "Dog",
       "price": 493.45,
       "gender": "female",
       "weight": 9,
@@ -3420,7 +3420,7 @@
     },
     {
       "id": 120,
-      "species": "dog",
+      "species": "Dog",
       "price": 1493.45,
       "gender": "male",
       "weight": 12,
@@ -3433,7 +3433,7 @@
     },
     {
       "id": 121,
-      "species": "bird",
+      "species": "Bird",
       "price": 2493.45,
       "gender": "male",
       "weight": 2,
@@ -3446,7 +3446,7 @@
     },
     {
       "id": 122,
-      "species": "bird",
+      "species": "Bird",
       "price": 3493.45,
       "gender": "male",
       "weight": 3.4,
@@ -3459,7 +3459,7 @@
     },
     {
       "id": 123,
-      "species": "bird",
+      "species": "Bird",
       "price": 3493.45,
       "gender": "male",
       "weight": 3.4,
@@ -3472,7 +3472,7 @@
     },
     {
       "id": 124,
-      "species": "bird",
+      "species": "Bird",
       "price": 3493.45,
       "gender": "male",
       "weight": 3.4,
@@ -3485,7 +3485,7 @@
     },
     {
       "id": 125,
-      "species": "bird",
+      "species": "Bird",
       "price": 3493.45,
       "gender": "male",
       "weight": 3.4,
@@ -3498,7 +3498,7 @@
     },
     {
       "id": 126,
-      "species": "bird",
+      "species": "Bird",
       "price": 2345.45,
       "gender": "male",
       "weight": 3.4,
@@ -3511,7 +3511,7 @@
     },
     {
       "id": 127,
-      "species": "bird",
+      "species": "Bird",
       "price": 23493.45,
       "gender": "female",
       "weight": 3.4,
@@ -3524,7 +3524,7 @@
     },
     {
       "id": 128,
-      "species": "bird",
+      "species": "Bird",
       "price": 3493.45,
       "gender": "male",
       "weight": 3.4,
@@ -3537,7 +3537,7 @@
     },
     {
       "id": 129,
-      "species": "bird",
+      "species": "Bird",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3550,7 +3550,7 @@
     },
     {
       "id": 130,
-      "species": "bird",
+      "species": "Bird",
       "price": 4232.78,
       "gender": "male",
       "weight": 5.4,
@@ -3563,7 +3563,7 @@
     },
     {
       "id": 131,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "male",
       "weight": 5.4,
@@ -3576,7 +3576,7 @@
     },
     {
       "id": 131,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3589,7 +3589,7 @@
     },
     {
       "id": 132,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3602,7 +3602,7 @@
     },
     {
       "id": 133,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3615,7 +3615,7 @@
     },
     {
       "id": 134,
-      "species": "fish",
+      "species": "Fish",
       "price": 1224.56,
       "gender": "male",
       "weight": 3.4,
@@ -3628,7 +3628,7 @@
     },
     {
       "id": 135,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3641,7 +3641,7 @@
     },
     {
       "id": 136,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3654,7 +3654,7 @@
     },
     {
       "id": 137,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 32.4,
@@ -3667,7 +3667,7 @@
     },
     {
       "id": 138,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3680,7 +3680,7 @@
     },
     {
       "id": 139,
-      "species": "fish",
+      "species": "Fish",
       "price": 1234.78,
       "gender": "female",
       "weight": 3.4,
@@ -3693,7 +3693,7 @@
     },
     {
       "id": 140,
-      "species": "fish",
+      "species": "Fish",
       "price": 234.78,
       "gender": "male",
       "weight": 30.4,

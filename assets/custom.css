@@ -22,11 +22,17 @@ hr.under-header-divider {
     color: #0e6dcd;
     text-decoration: underline;
 }
-.item-properties{
+
+.item_properties {
     /*max-width: 100px;*/
     /*width: fit-content;*/
 }
 
-.item-properties p{
+.item_properties p {
     margin: 2px;
+}
+
+img.item_img {
+    max-width: 200px;
+    overflow: hidden;
 }

@@ -7,12 +7,12 @@ export class MenuController {
     this.view = new MenuView();
   }
 
-  showMenu = () => {
+  showMenu() {
     this.model.getItems()
       .then(json => this.view.render(json.categories, this.selectCategory));
   };
 
-  selectCategory = (ev) => {
+  selectCategory(ev) {
     console.log(`You select ${ev.target.innerText}`);
   };
 }

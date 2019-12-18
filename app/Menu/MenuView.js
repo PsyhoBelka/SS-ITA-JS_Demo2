@@ -18,8 +18,6 @@ export class MenuView {
 
   render(items, onSelect) {
     this.domElem.innerHTML = '';
-    console.log(items);
-    console.log(this.prepareData(items));
     this.domElem.innerHTML = this.template.getHtml(this.prepareData(items));
     this.addListeners(onSelect);
   };
