@@ -1,10 +1,10 @@
-import {Templater} from '../Templater.js';
+import { Templater } from '../Templater.js';
 
 export class MenuView {
   constructor() {
     this.domElem = document.querySelector('.menu');
     this.menuItems = [];
-    this.templater = Templater.getInstance();
+    this.templater = new Templater();
   }
 
   prepareData = (data) => {
@@ -18,7 +18,7 @@ export class MenuView {
 
   async render(items, onSelect) {
     this.domElem.innerHTML = '';
-    console.log(items);
+    console.log(this.templater);
     this.domElem.innerHTML = await this.templater.getHTML(this.prepareData(items), 'menu');
     this.addListeners(onSelect);
   };

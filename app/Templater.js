@@ -1,13 +1,14 @@
-import {TEMPLATE_URL} from "./config.js";
+import { TEMPLATE_URL } from './config.js';
 
-export const Templater = {
-
-  tplStr: '',
-  templates: [],
-
-  getInstance() {
-    return this;
-  },
+export class Templater {
+  constructor() {
+    if (!Templater.instance) {
+      this.tplStr = '';
+      this.templates = [];
+      Templater.instance = this;
+    }
+    return Templater.instance;
+  }
 
   async getTpl(name) {
     let template = this.templates.find(x => x.name === name);
@@ -16,9 +17,9 @@ export const Templater = {
       // console.log(`fetch template ${TEMPLATE_URL}/${name}.tpl`);
       await fetch(`${TEMPLATE_URL}/${name}.tpl`)
         .then(data => data.text())
-        .then(text => this.templates.push({name: name, str: text}));
+        .then(text => this.templates.push({ name: name, str: text }));
     }
-  },
+  }
 
   async getHTML(data, tplName) {
     await this.getTpl(tplName);
@@ -31,6 +32,8 @@ export const Templater = {
     // console.log(`html for tpl ${tplName} - ${htmlStr}`);
     return htmlStr;
   }
-};
+
+  static instance = false;
+}
 
 //(?<={{).+(?=}})
