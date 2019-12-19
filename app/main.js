@@ -1,8 +1,9 @@
 import { ItemsGridController } from './ItemsGrid/ItemsGridController.js';
 import { MenuController } from './Menu/MenuController.js';
+import { Observer } from './utils/Observer.js';
 
-const menuController = new MenuController();
-const itemsGridController = new ItemsGridController();
+const menuController = new MenuController(Observer.getActions());
+const itemsGridController = new ItemsGridController((Observer.getActions()));
 
 
 //todo observer

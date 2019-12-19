@@ -2,9 +2,10 @@ import { MenuModel } from './MenuModel.js';
 import { MenuView } from './MenuView.js';
 
 export class MenuController {
-  constructor() {
+  constructor({ notify }) {
     this.model = new MenuModel();
     this.view = new MenuView();
+    this.notify = notify;
   }
 
   showMenu() {
