@@ -24,6 +24,7 @@ export class MenuView {
 
   addListeners = (func) => {
     this.menuItems = document.querySelectorAll('[class*=item-link]');
+    //todo use map().join()
     this.menuItems.forEach(x => {
       x.addEventListener('click', func);
     });

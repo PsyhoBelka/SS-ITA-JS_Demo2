@@ -5,6 +5,8 @@ const menuController = new MenuController();
 const itemsGridController = new ItemsGridController();
 
 
+//todo observer
+
 menuController.showMenu();
 itemsGridController.showGrid();
 

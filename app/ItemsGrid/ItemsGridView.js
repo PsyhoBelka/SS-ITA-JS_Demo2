@@ -14,6 +14,7 @@ export class ItemsGridView {
 
   addListeners(func) {
     this.menuItems = document.querySelectorAll('[class*=item_id]');
+    //todo use map().join()
     this.menuItems.forEach(x => {
       x.addEventListener('click', func);
     });
