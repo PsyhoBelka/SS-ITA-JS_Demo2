@@ -1,47 +1,34 @@
 export class ItemsGridTemplate {
   getSmallItemCardHTML({ id, species, breed, image, price, gender, birth_date }) {
-    // language=HTML
     return `
-         <div>
-            <div class="uk-card uk-card-default uk-card-body uk-card-hover uk-padding-small ">
-                <div class="uk-grid uk-child-width-1-2 uk-overflow-hidden" uk-grid>
-                    <!--foto-->
-                    <div>
-                        <div class="item_img">
-                            <img src="${image}" width="400px" height="200px">
+        <div class="uk-flex-inline">
+                <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
+                    <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
+                        <h3 class="uk-text-center  uk-margin-remove uk-flex-wrap">${breed}</h3>
+                        <div class="photo uk-card-header uk-flex-center uk-flex">
+                            <img src="${image}">
                         </div>
                     </div>
-                    <!--small data-->
-                    <div class="">
-                        <h2 class="uk-card-title uk-margin-remove">
-                            ${species}, ${breed}
-                        </h2>
-                        <div class="uk-grid uk-child-width-1-2 " uk-grid>
-                            <div class="item_properties">
-                                <p>Price:</p>
-                                <p>Gender:</p>
-                                <p>Age:</p>
-                            </div>
-                            <div class="item_properties">
-                                <p>$${price}</p>
-                                <p>${gender}</p>
-                                <p>${((Date.now() - birth_date) / 1000 / 60 / 60 / 24 / 365).toFixed(0)} yr</p>
-                            </div>
+                    <div class="item_description uk-flex uk-flex-row uk-flex-center">
+                        <div class="uk-flex uk-flex-middle">
+                            <h1>${species}</h1>
+                        </div>
+                        <div class="uk-card-body uk-flex uk-flex-center uk-padding-small">
+                            Gender: ${gender} <br>
+                            Price: $${price} <br>
+                            Age: ${((Date.now() - birth_date) / 1000 / 60 / 60 / 24 / 365).toFixed(0)} yr
+                        </div>
+                    </div>
+                    <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
+                        <div class="item__buy_button item_id_${id} uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                            <div class="uk-text-center">Buy</div>
+                        </div>
+                        <div class="item__details_button item_id_${id} uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                            <div class="uk-text-center">Details</div>
                         </div>
                     </div>
                 </div>
-                <!--buttons-->
-                <div class="uk-flex uk-child-width-1-2 uk-margin-small-top">
-                    <div class="item__buy_button item_id_${id} uk-button uk-button-primary uk-child-width-1-1 uk-margin-large-right">
-                        <span>Buy</span>
-                    </div>
-                    <div class="item__details_button item_id_${id} uk-button uk-button-danger uk-child-width-1-1">
-                        <span>Details</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        `;
+            </div>`;
   }
 
   getHTML(data) {
@@ -51,57 +38,9 @@ export class ItemsGridTemplate {
     });
     // language=HTML
     return `
-        <div class="uk-grid uk-child-width-1-4 uk-grid-small " uk-grid>
+        <div class="uk-first-column uk-flex uk-flex-around uk-flex-bottom uk-flex-wrap" uk-margin>
             ${str}
         </div>
     `;
   }
 }
-
-/*
-
-<div class="uk-grid uk-child-width-1-4 uk-grid-small " uk-grid>
-
-<div>
-                            <div class="uk-card uk-card-default uk-card-body uk-card-hover uk-padding-small ">
-                                <div class="uk-grid uk-child-width-1-2">
-                                    <!--foto-->
-                                    <div>
-                                        <div>
-                                            <img src="assets/cat-1.jpg" width="500px">
-                                        </div>
-                                    </div>
-                                    <!--small data-->
-                                    <div class="uk-margin-medium-bottom">
-                                        <h2 class="uk-card-title uk-margin-remove">
-                                            Cat, siamian
-                                        </h2>
-                                        <div class="uk-grid uk-child-width-1-2 ">
-                                            <div class="item-properties">
-                                                <p>Price:</p>
-                                                <p>Gender:</p>
-                                                <p>Age:</p>
-                                            </div>
-                                            <div class="item-properties">
-                                                <p>$23.45</p>
-                                                <p>male</p>
-                                                <p>45 years</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--buttons-->
-                                <div class="uk-flex uk-child-width-1-2">
-                                    <div class="item__buy_button uk-button uk-button-primary uk-child-width-1-1 uk-margin-large-right">
-                                        <span>Buy</span>
-                                    </div>
-                                    <div class="item__details_button uk-button uk-button-danger uk-child-width-1-1">
-                                        <span>Details</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-</div>
-
-*/
