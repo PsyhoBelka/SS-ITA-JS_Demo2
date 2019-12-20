@@ -17,14 +17,14 @@ export class Observer {
   }
 
   static notify(event, data) {
-    for (const sub in this.subscribers[event]) {
-      sub(data);
+    if (this.subscribers.hasOwnProperty(event)) {
+      this.subscribers[event].forEach(sub => sub(data));
     }
   }
 
   static unsubscribe(event, func) {
     if (this.subscribers.hasOwnProperty(event) && this.subscribers[event].includes(func)) {
-      this.subscribers[event].slice(this.subscribers[event].findIndex(x => x === func), 1);
+      this.subscribers[event] = this.subscribers[event].filter(x => x !== func);
     }
   }
 }
