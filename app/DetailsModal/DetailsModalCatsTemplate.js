@@ -29,8 +29,8 @@ export class DetailsModalCatsTemplate {
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-right uk-flex-inline">
-                    <div class="modal_close uk-button uk-button-secondary">
-                        <div class="clickable  uk-modal-close uk-padding-small uk-padding-remove-vertical">Close
+                    <div class="modal_close uk-button uk-button-secondary uk-modal-close">
+                        <div class="clickable uk-padding-small uk-padding-remove-vertical">Close
                         </div>
                     </div>
                 </div>
