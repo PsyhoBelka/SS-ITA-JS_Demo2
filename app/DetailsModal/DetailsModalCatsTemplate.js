@@ -6,7 +6,7 @@ export class DetailsModalCatsTemplate {
         <div class="uk-modal-dialog uk-modal-body">
             <button class="modal_close uk-modal-close-default uk-flex-right" type="button" uk-close></button>
             <h2 class="details_title uk-modal-title uk-flex uk-flex-center">${breed}</h2>
-            <div class="details_photo">
+            <div class="details_photo uk-flex uk-flex-center">
                 <img src="${image}">
             </div>
             <div class="details_body uk-modal-body uk-flex uk-flex-row uk-flex-around">
@@ -29,8 +29,8 @@ export class DetailsModalCatsTemplate {
                     </div>
                 </div>
                 <div class="uk-flex uk-flex-right uk-flex-inline">
-                    <div class="uk-button uk-button-secondary">
-                        <div class="clickable modal_close uk-modal-close uk-padding-small uk-padding-remove-vertical">Close
+                    <div class="modal_close uk-button uk-button-secondary">
+                        <div class="clickable  uk-modal-close uk-padding-small uk-padding-remove-vertical">Close
                         </div>
                     </div>
                 </div>

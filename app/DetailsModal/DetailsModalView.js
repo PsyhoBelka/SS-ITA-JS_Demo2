@@ -22,6 +22,9 @@ export class DetailsModalView {
   addEventListenersToClose() {
     document.querySelectorAll('.modal_close').forEach(x => {
       x.addEventListener('click', () => {
+        this.root.style.display = 'none';
+        document.body.style.removeProperty('overflow-y');
+        document.documentElement.classList.remove('uk-modal-page');
         this.root.innerHTML = '';
       });
     });
