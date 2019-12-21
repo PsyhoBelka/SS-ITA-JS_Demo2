@@ -6,7 +6,7 @@ export class ItemsGridTemplate {
                     <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                         <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">${breed}</h3>
                         <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                            <img src="${image}">
+                            <img src="${image}" onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                         </div>
                     </div>
                     <div class="item_description uk-flex uk-flex-around uk-margin-small-left">

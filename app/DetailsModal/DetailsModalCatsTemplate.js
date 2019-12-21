@@ -7,7 +7,7 @@ export class DetailsModalCatsTemplate {
             <button class="modal_close uk-modal-close-default uk-flex-right" type="button" uk-close></button>
             <h2 class="details_title uk-modal-title uk-flex uk-flex-center">${breed}</h2>
             <div class="details_photo uk-flex uk-flex-center">
-                <img src="${image}">
+                <img src="${image}" onerror="this.onerror = null; this.src='assets/No-image-available.png';">
             </div>
             <div class="details_body uk-modal-body uk-flex uk-flex-row uk-flex-around">
                 <div class="uk-flex uk-flex-column uk-flex-inline">
