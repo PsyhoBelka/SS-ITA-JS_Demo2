@@ -37,11 +37,11 @@ hr.under-header-divider {
     margin: 0;
 }
 
-.item_card h1::first-letter {
+.item_card h1, h3::first-letter {
     text-transform: capitalize;
 }
 
-.item_card h3::first-letter {
+h2.details_title {
     text-transform: capitalize;
 }
 
