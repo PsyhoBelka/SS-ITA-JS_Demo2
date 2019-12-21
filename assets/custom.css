@@ -14,18 +14,19 @@ hr.under-header-divider {
 
 .clickable:hover {
     cursor: pointer;
-    color: #ff69b4;
-    font-weight: bold;
 }
 
-.clickable {
+.clickable[class*=link] {
     color: #0e6dcd;
     text-decoration: underline;
 }
 
+.clickable[class*=link]:hover {
+    color: #ff69b4;
+    font-weight: bold;
+}
+
 .item_description {
-    /*max-width: 100px;*/
-    /*width: fit-content;*/
 }
 
 .item_description p {
@@ -36,12 +37,16 @@ hr.under-header-divider {
     margin: 0;
 }
 
-.item_card {
-    background-color: #feffe5;
+.item_card h1::first-letter {
+    text-transform: capitalize;
 }
 
-.item_card .uk-button {
-    cursor: pointer;
+.item_card h3::first-letter {
+    text-transform: capitalize;
+}
+
+.item_card {
+    background-color: #feffe5;
 }
 
 div.photo img {
@@ -52,10 +57,7 @@ div.photo img {
 }
 
 div.item_card {
-    /*max-width: 250px;*/
-    /*min-width: 200px;*/
     width: 210px;
-    /*height: 350px;*/
 }
 
 div.description p {
@@ -63,9 +65,17 @@ div.description p {
 }
 
 .item__buy_button {
-
+    border-radius: 10px 0 0 10px;
 }
 
 .item__details_button {
+    border-radius: 0 10px 10px 0;
+}
 
+.footer {
+    border-top: 1px solid #e5e5e5;
+}
+
+.details_modal .uk-button {
+    border-radius: 8px;
 }

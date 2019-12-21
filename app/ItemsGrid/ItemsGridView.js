@@ -2,13 +2,11 @@ import { ItemsGridTemplate } from './ItemsGridTemplate.js';
 
 export class ItemsGridView {
   constructor() {
-    this.domElem = document.querySelector('.items_grid');
     this.template = new ItemsGridTemplate();
   }
 
-  render(items, onSelect) {
-    this.domElem.innerHTML = '';
-    this.domElem.innerHTML = this.template.getHTML(items);
+  render(root, items, onSelect) {
+    root.insertAdjacentHTML('beforeend', this.template.getHTML(items));
     this.addListeners(onSelect);
   }
 

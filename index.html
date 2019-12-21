@@ -11,35 +11,47 @@
     </head>
     <body>
         <div class="uk-container uk-width-1-1">
-            <div>
-                <!--header container-->
-                <div class=" uk-flex uk-flex-middle">
-                    <div class="uk-flex uk-flex-middle uk-flex-left uk-width-1-1">
-                        <img src="assets/camping-logo.jpg" width="100px" alt="" uk-img>
-                        <h1> Animals shopper </h1>
+            <div class="app_root">
+
+            </div>
+        </div>
+        <div class="">
+            <!-- This is a button toggling the modal -->
+            <button uk-toggle="target: #details_modal" type="button">show modal</button>
+
+            <!-- This is the modal -->
+            <div id="details_modal" class="details_modal" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <button class="uk-modal-close-default uk-flex-right" type="button" uk-close></button>
+                    <h2 class="details_title uk-modal-title uk-flex uk-flex-center">Siberian husky</h2>
+                    <div class="details_photo">
+                        <img src="assets/cat-1.jpg">
                     </div>
-                    <div class="uk-flex uk-flex-middle uk-flex-right uk-margin-medium-top">
-                        <img class="uk-margin-small-right" src="assets/shopping-cart.png" width="25px">
-                        <span class="clickable">Cart</span>
-                        <hr class="uk-divider-vertical-custom">
-                        <img class="uk-margin-small-right" src="assets/login-icon.png" width="20px">
-                        <span class="clickable" id="111">Login</span>
+                    <div class="details_body uk-modal-body uk-flex uk-flex-row uk-flex-around">
+                        <div class="uk-flex uk-flex-column uk-flex-inline">
+                            Gender:<br>
+                            Age:<br>
+                            Sterile:<br>
+                            body
+                        </div>
+                        <div class="uk-flex uk-flex-column uk-flex-inline ">
+                            <h2 class="uk-heading-small">$344</h2>
+                        </div>
+
                     </div>
-                </div>
-                <!--menu container-->
-                <div>
-                    <ul uk-tab class="uk-tab-bottom uk-flex-center menu">
-                        <!--menu items here-->
-                    </ul>
-                    <hr class="under-header-divider">
-                </div>
-                <!--content container-->
-                <div class="items_grid uk-grid uk-margin-large-right uk-margin-large-left uk-align-center " uk-grid>
-                    <!--content here-->
-                </div>
-                <!--footer container-->
-                <div class="">
-                    footer
+                    <div class="uk-flex uk-flex-around">
+                        <div class="uk-flex uk-flex-left uk-flex-inline">
+                            <div class="uk-button uk-button-danger uk-padding-small uk-padding-remove-vertical">
+                                Buy pet
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-right uk-flex-inline">
+                            <div class="uk-button uk-button-secondary">
+                                <div class="uk-modal-close uk-padding-small uk-padding-remove-vertical">Close
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

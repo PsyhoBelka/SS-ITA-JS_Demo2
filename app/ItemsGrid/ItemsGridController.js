@@ -7,12 +7,13 @@ export class ItemsGridController {
     this.view = new ItemsGridView();
   }
 
-  showGrid() {
-    this.model.getItems()
-      .then(json => this.view.render(json.animals, this.selectCategory));
+  async showGrid(root) {
+    await this.model.getItems()
+      .then(json => this.view.render(root, json, this.selectCategory));
   };
 
   selectCategory(ev) {
+    console.log(ev);
     console.log(`You select ${ev.target.innerText}`);
   };
 }

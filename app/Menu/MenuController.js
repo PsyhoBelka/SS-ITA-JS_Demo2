@@ -8,9 +8,9 @@ export class MenuController {
     this.notify = notify;
   }
 
-  showMenu() {
-    this.model.getItems()
-      .then(json => this.view.render(json.categories, this.selectCategory));
+  async showMenu(root) {
+    await this.model.getItems()
+      .then(json => this.view.render(root, json.categories, this.selectCategory));
   };
 
   selectCategory(ev) {

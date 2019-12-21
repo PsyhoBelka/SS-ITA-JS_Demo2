@@ -20,15 +20,16 @@ export class ItemsGridTemplate {
                         </div>
                     </div>
                     <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                        <div class="item__buy_button item_id_${id} uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                            <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                        <div class="item__buy_button uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                            <div class="item_id_${id} uk-flex uk-flex-around uk-text-center">Buy</div>
                         </div>
-                        <div class="item__details_button item_id_${id} uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                            <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                        <div class="item__details_button uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                            <div uk-toggle="target: #details_modal" class="item_id_${id} uk-flex uk-flex-around uk-text-center">Details</div>
                         </div>
                     </div>
                 </div>
-            </div>`;
+            </div>
+`;
   }
 
   getHTML(data) {
@@ -38,7 +39,7 @@ export class ItemsGridTemplate {
     });
     // language=HTML
     return `
-        <div class="uk-first-column uk-flex uk-flex-middle uk-flex-wrap" uk-margin>
+        <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap" uk-margin>
             ${str}
         </div>
     `;
