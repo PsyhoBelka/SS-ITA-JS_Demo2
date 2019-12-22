@@ -85,3 +85,20 @@ div.details_photo img {
     max-height: 300px;
     border-radius: 8px;
 }
+
+.details_table {
+    width: 220px;
+}
+
+.details_table td:nth-child(odd) {
+    font-weight: bold;
+}
+
+.details_table td {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.details_modal > div {
+    max-width: 450px !important;
+}
