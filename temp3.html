@@ -70,28 +70,34 @@
                     </ul>
                     <hr class="under-header-divider">
                 </div>
-                <!--filter&search container-->
-                <div class="uk-flex-center uk-flex uk-flex-middle uk-flex-wrap uk-flex-around uk-heading-divider uk-margin-small-bottom uk-flex-row">
-                    <div>
-                        <select name="species_filter">
-                            <option value="all">---Select option---</option>
-                            <option value="cat">Cats</option>
-                            <option value="dog">Dogs</option>
-                            <option value="fish">Fishes</option>
-                            <option value="bird">Birds</option>
-                        </select>
-                    </div>
-                    <input type="search" placeholder="enter breed to search">
+                <!--pagination-->
+                <div class="uk-flex uk-flex-center">
+                    <ul class="uk-pagination" uk-margin>
+                        <li><a href="#"><span uk-pagination-previous></span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li class="uk-active"><span>7</span></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">20</a></li>
+                        <li><a href="#"><span uk-pagination-next></span></a></li>
+                    </ul>
                 </div>
-                <!--grid container-->
-                <div class="uk-flex uk-flex-center uk-flex-middle uk-flex-wrap" uk-margin="">
+                <!--content container-->
+                <div class="content_grid uk-flex uk-flex-center uk-flex-middle uk-flex-wrap" uk-margin="">
 
                     <div class="uk-flex-inline uk-first-column">
                         <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">persian</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/1.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/1.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -103,13 +109,12 @@
                                     Price: $100 <br>
                                     Age: 1 yr
                                 </div>
-
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button uk-flex uk-flex-around uk-text-center item_id_1 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                <div class="item_id_1 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
                                     Buy
                                 </div>
-                                <div class="item__details_button uk-flex uk-flex-around uk-text-center item_id_1 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                <div class="item_id_1 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
                                      uk-toggle="target: #details_modal">
                                     Details
                                 </div>
@@ -122,7 +127,8 @@
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">persian</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/2.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/2.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -136,11 +142,12 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_2 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_2 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_2 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_2 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
@@ -151,7 +158,8 @@
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">persian</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/3.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/3.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -165,22 +173,24 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_3 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_3 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_3 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_3 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="uk-flex-inline">
+                    <div class="uk-flex-inline uk-margin-small-top uk-first-column">
                         <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">bobtail</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/4.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/4.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -194,22 +204,24 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_4 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_4 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_4 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_4 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="uk-flex-inline">
+                    <div class="uk-flex-inline uk-margin-small-top">
                         <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">bobtail</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/5.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/5.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -223,22 +235,24 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_5 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_5 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_5 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_5 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="uk-flex-inline uk-margin-small-top uk-first-column">
+                    <div class="uk-flex-inline uk-margin-small-top">
                         <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">bobtail</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/6.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/6.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -252,22 +266,24 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_6 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_6 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_6 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_6 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="uk-flex-inline uk-margin-small-top">
+                    <div class="uk-flex-inline uk-margin-small-top uk-first-column">
                         <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">british shorthair</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/7.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/7.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -281,11 +297,12 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_7 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_7 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_7 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_7 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
@@ -296,7 +313,8 @@
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">british shorthair</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/8.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/8.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -310,11 +328,12 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_8 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_8 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_8 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_8 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
@@ -325,7 +344,8 @@
                             <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
                                 <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">british shorthair</h3>
                                 <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/9.jpg">
+                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/9.jpg"
+                                         onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                                 </div>
                             </div>
                             <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
@@ -339,280 +359,85 @@
                                 </div>
                             </div>
                             <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_9 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
+                                <div class="item_id_9 item__buy_button  uk-flex uk-flex-around uk-text-center uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
+                                    Buy
                                 </div>
-                                <div class="item__details_button item_id_9 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-flex-inline uk-margin-small-top">
-                        <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
-                                <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">british shorthair</h3>
-                                <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/10.jpg">
-                                </div>
-                            </div>
-                            <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
-                                <div class="uk-flex uk-flex-middle">
-                                    <h1>cat</h1>
-                                </div>
-                                <div class="uk-flex uk-text-center">
-                                    Gender: male <br>
-                                    Price: $600 <br>
-                                    Age: 0 yr
-                                </div>
-                            </div>
-                            <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_10 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
-                                </div>
-                                <div class="item__details_button item_id_10 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
+                                <div class="item_id_9 item__details_button uk-flex uk-flex-around uk-text-center uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2"
+                                     uk-toggle="target: #details_modal">
+                                    Details
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="uk-flex-inline uk-margin-small-top uk-first-column">
-                        <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
-                                <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">labrador</h3>
-                                <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/11.jpg">
-                                </div>
-                            </div>
-                            <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
-                                <div class="uk-flex uk-flex-middle">
-                                    <h1>dog</h1>
-                                </div>
-                                <div class="uk-flex uk-text-center">
-                                    Gender: female <br>
-                                    Price: $800 <br>
-                                    Age: 1 yr
-                                </div>
-                            </div>
-                            <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_11 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
-                                </div>
-                                <div class="item__details_button item_id_11 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-flex-inline uk-margin-small-top">
-                        <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
-                                <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">labrador</h3>
-                                <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/12.jpg">
-                                </div>
-                            </div>
-                            <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
-                                <div class="uk-flex uk-flex-middle">
-                                    <h1>dog</h1>
-                                </div>
-                                <div class="uk-flex uk-text-center">
-                                    Gender: male <br>
-                                    Price: $1000 <br>
-                                    Age: 1 yr
-                                </div>
-                            </div>
-                            <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_12 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
-                                </div>
-                                <div class="item__details_button item_id_12 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-flex-inline uk-margin-small-top">
-                        <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
-                                <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">labrador</h3>
-                                <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/13.jpg">
-                                </div>
-                            </div>
-                            <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
-                                <div class="uk-flex uk-flex-middle">
-                                    <h1>dog</h1>
-                                </div>
-                                <div class="uk-flex uk-text-center">
-                                    Gender: female <br>
-                                    Price: $1200 <br>
-                                    Age: 1 yr
-                                </div>
-                            </div>
-                            <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_13 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
-                                </div>
-                                <div class="item__details_button item_id_13 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-flex-inline uk-margin-small-top">
-                        <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
-                                <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">siberian husky</h3>
-                                <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/14.jpg">
-                                </div>
-                            </div>
-                            <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
-                                <div class="uk-flex uk-flex-middle">
-                                    <h1>dog</h1>
-                                </div>
-                                <div class="uk-flex uk-text-center">
-                                    Gender: male <br>
-                                    Price: $600 <br>
-                                    Age: 3 yr
-                                </div>
-                            </div>
-                            <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_14 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
-                                </div>
-                                <div class="item__details_button item_id_14 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-flex-inline uk-margin-small-top">
-                        <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
-                                <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">siberian husky</h3>
-                                <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/15.jpg">
-                                </div>
-                            </div>
-                            <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
-                                <div class="uk-flex uk-flex-middle">
-                                    <h1>dog</h1>
-                                </div>
-                                <div class="uk-flex uk-text-center">
-                                    Gender: female <br>
-                                    Price: $1200 <br>
-                                    Age: 1 yr
-                                </div>
-                            </div>
-                            <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_15 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
-                                </div>
-                                <div class="item__details_button item_id_15 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="uk-flex-inline uk-margin-small-top uk-first-column">
-                        <div class="item_card uk-card uk-card-default uk-card-hover uk-margin-small-left uk-margin-small-right">
-                            <div class="uk-flex uk-flex-column uk-child-width-1-1 ">
-                                <h3 class="uk-flex-wrap uk-margin-remove  uk-text-center">siberian husky</h3>
-                                <div class="photo uk-card-header uk-flex uk-flex-center uk-padding-small">
-                                    <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/16.jpg">
-                                </div>
-                            </div>
-                            <div class="item_description uk-flex uk-flex-around uk-margin-small-left">
-                                <div class="uk-flex uk-flex-middle">
-                                    <h1>dog</h1>
-                                </div>
-                                <div class="uk-flex uk-text-center">
-                                    Gender: male <br>
-                                    Price: $1000 <br>
-                                    Age: 1 yr
-                                </div>
-                            </div>
-                            <div class="uk-card-footer uk-flex uk-flex-middle uk-flex-center uk-flex-stretch">
-                                <div class="item__buy_button item_id_16 uk-button uk-button-primary uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Buy</div>
-                                </div>
-                                <div class="item__details_button item_id_16 uk-button uk-button-danger uk-padding-remove-bottom uk-padding-remove-top uk-padding-small  uk-width-1-2">
-                                    <div class="uk-flex uk-flex-around uk-text-center">Details</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--footer container-->
-                <div class="footer uk-card-footer uk-flex uk-flex-center uk-margin-medium-top">
-                    footer
                 </div>
             </div>
         </div>
+
         <!--details modal container-->
         <div class="">
             <!-- This is a button toggling the modal -->
             <button uk-toggle="target: #details_modal" type="button">show modal</button>
 
             <!-- This is the modal -->
-            <div id="details_modal" uk-modal>
-                <div class="uk-modal-dialog uk-modal-body">
-                    <button class="uk-modal-close-default uk-flex-right" type="button" uk-close></button>
-                    <h2 class="details_title uk-modal-title uk-flex uk-flex-center">Siberian husky</h2>
-                    <div class="details_photo">
-                        <img src="assets/cat-1.jpg">
+            <div id="details_modal" class="details_modal uk-modal uk-open" uk-modal="" style="display: block;">
+                <div class="uk-modal-dialog uk-modal-body uk-padding-small">
+                    <button class="modal_close uk-modal-close-default uk-flex-right uk-icon uk-close"
+                            type="button" uk-close="">
+                        <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"
+                             data-svg="close-icon">
+                            <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13"
+                                  y2="13"></line>
+                            <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1"
+                                  y2="13"></line>
+                        </svg>
+                    </button>
+                    <h2 class="details_title uk-modal-title uk-flex uk-flex-center">persian</h2>
+                    <div class="details_photo uk-flex uk-flex-center">
+                        <img src="https://alexeykasaev3.github.io/softServe-academy/demo2/animals-images/3.jpg"
+                             onerror="this.onerror = null; this.src='assets/No-image-available.png';">
                     </div>
-                    <div class="details_body uk-modal-body uk-flex uk-flex-row uk-flex-around">
-                        <!--<div class="uk-flex uk-flex-column uk-flex-inline">-->
-                        <!--:<br>-->
-                        <!--:<br>-->
-                        <!--:<br>-->
-                        <!--body-->
-                        <!--</div>-->
-                        <table class="uk-table uk-table-small uk-table-divider uk-width-small">
+                    <div class="details_body uk-modal-body uk-flex uk-flex-row uk-flex-around uk-padding-small">
+                        <table class="details_table uk-table uk-table-small uk-table-divider uk-width-small uk-table-middle">
                             <tbody>
                             <tr>
-                                <td class="uk-width-small">Gender</td>
-                                <td class="uk-width-small">Male</td>
+                                <td>Gender</td>
+                                <td>female</td>
                             </tr>
                             <tr>
-                                <td class="uk-width-small">Age</td>
-                                <td class="uk-width-small">58yr</td>
+                                <td>Age</td>
+                                <td>1 yr</td>
                             </tr>
                             <tr>
-                                <td class="uk-width-small">Sterile</td>
-                                <td class="uk-width-small">Yes</td>
+                                <td>Weight</td>
+                                <td>2kg</td>
                             </tr>
                             <tr>
-                                <td class="uk-width-small">Hair</td>
-                                <td class="uk-width-small">Long</td>
+                                <td>Color</td>
+                                <td>orange</td>
+                            </tr>
+                            <tr>
+                                <td>Sterile</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Hair</td>
+                                <td>long</td>
                             </tr>
                             </tbody>
                         </table>
-                        <div class="uk-flex uk-flex-column uk-flex-inline uk-flex-middle">
-                            <h2 class="uk-heading-small">$344</h2>
+                        <div class="uk-flex uk-flex-inline uk-flex-middle">
+                            <h2 class="uk-heading-small">$120.00</h2>
                         </div>
-
                     </div>
                     <div class="uk-flex uk-flex-around">
                         <div class="uk-flex uk-flex-left uk-flex-inline">
-                            <div class="uk-button-danger uk-padding-small uk-padding-remove-vertical">
-                                buy pet
+                            <div class="modal_details__buy_button clickable uk-button uk-button-danger uk-padding-small uk-padding-remove-vertical">
+                                Buy pet
                             </div>
                         </div>
                         <div class="uk-flex uk-flex-right uk-flex-inline">
-                            <div class="uk-button-secondary">
-                                <div class="uk-modal-close uk-padding-small uk-padding-remove-vertical">close details
+                            <div class="modal_close uk-button uk-button-secondary uk-modal-close">
+                                <div class="clickable uk-padding-small uk-padding-remove-vertical">Close
                                 </div>
                             </div>
                         </div>

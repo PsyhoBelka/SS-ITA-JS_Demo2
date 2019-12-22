@@ -6,7 +6,16 @@ export class ItemsGridView {
   }
 
   render(root, items, { buyClick, detailsClick }) {
-    root.insertAdjacentHTML('beforeend', this.template.getHTML(items));
+    // root.insertAdjacentHTML('beforeend', this.template.getHTML(items));
+    // root.insertAdjacentElement('beforeend', this.template.getHTML(items));
+    let gridDom = root.querySelector('.content_grid');
+
+    if (!gridDom) {
+      root.insertAdjacentElement('beforeend', this.createDomNode(this.template.getHTML(items)));
+    } else {
+      gridDom.replaceWith(this.createDomNode(this.template.getHTML(items)));
+    }
+
     this.addParentListener(items, buyClick, detailsClick);
   }
 
@@ -31,4 +40,21 @@ export class ItemsGridView {
       }
     }
   }
+
+  createDomNode(str) {
+    let gridDom = document.createElement('div');
+    gridDom.classList.add('content_grid', 'uk-flex', 'uk-flex-center', 'uk-flex-middle', 'uk-flex-wrap');
+    gridDom.setAttribute('uk-margin', '');
+    gridDom.insertAdjacentHTML('afterbegin', str);
+    return gridDom;
+  }
+
+  searchDomNode(root, str) {
+
+  }
+
+  /*
+   let gridDom = document.querySelector('.content_grid');
+
+   */
 }

@@ -19,9 +19,9 @@ async function init() {
   await footerController.showFooter(root);
 }
 
+async function changePage() {
+  await itemsGridController.showGrid(root, 5);
+}
+
 init();
-
-
-// fetch(`${API_URL}/categories`).then(data => data.json()).then(json => console.log(json));
-//show that tpl was cashed
-// window.menu=menuController;
+setTimeout(changePage, 3000);

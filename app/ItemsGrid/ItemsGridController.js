@@ -6,14 +6,27 @@ export class ItemsGridController {
     this.model = new ItemsGridModel();
     this.view = new ItemsGridView();
     this.modalController = modalController;
+    this.currentPage = 1;
+    this.pageCount = 20;
   }
 
-  async showGrid(root) {
+  async showGrid(root, currentPage) {
     await this.model.getItems()
-      .then(json => this.view.render(root, json, {
-        buyClick: this.buyButtonClickHandler,
-        detailsClick: this.detailsButtonClickHandler,
-      }));
+      .then(data => {
+        if (!currentPage) {
+          currentPage = this.currentPage;
+        }
+        else {
+          this.currentPage = currentPage;
+        }
+        let pagedData = data.slice((currentPage - 1) * this.pageCount, currentPage * this.pageCount);
+        console.log(pagedData);
+        this.view.render(root, pagedData, {
+          buyClick: this.buyButtonClickHandler,
+          detailsClick: this.detailsButtonClickHandler,
+        });
+      });
+    console.log(this.currentPage);
   };
 
   buyButtonClickHandler = (data) => {
