@@ -19,14 +19,14 @@ export class ItemsGridController {
         else {
           this.currentPage = currentPage;
         }
+
         let pagedData = data.slice((currentPage - 1) * this.pageCount, currentPage * this.pageCount);
-        console.log(pagedData);
+
         this.view.render(root, pagedData, {
           buyClick: this.buyButtonClickHandler,
           detailsClick: this.detailsButtonClickHandler,
         });
       });
-    console.log(this.currentPage);
   };
 
   buyButtonClickHandler = (data) => {

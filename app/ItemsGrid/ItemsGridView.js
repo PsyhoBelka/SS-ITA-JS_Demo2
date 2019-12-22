@@ -6,8 +6,6 @@ export class ItemsGridView {
   }
 
   render(root, items, { buyClick, detailsClick }) {
-    // root.insertAdjacentHTML('beforeend', this.template.getHTML(items));
-    // root.insertAdjacentElement('beforeend', this.template.getHTML(items));
     let gridDom = root.querySelector('.content_grid');
 
     if (!gridDom) {
@@ -27,6 +25,7 @@ export class ItemsGridView {
 
   findElementAndCallFunc(ev, { items, buyClick, detailsClick }) {
     const elemId = ev.target.classList.value.match(/(?<=item_id_)[0-9]+/g);
+
     if (elemId) {
       const data = items.find(x => x.id === +elemId);
       console.log(data);
@@ -43,18 +42,11 @@ export class ItemsGridView {
 
   createDomNode(str) {
     let gridDom = document.createElement('div');
+
     gridDom.classList.add('content_grid', 'uk-flex', 'uk-flex-center', 'uk-flex-middle', 'uk-flex-wrap');
     gridDom.setAttribute('uk-margin', '');
     gridDom.insertAdjacentHTML('afterbegin', str);
+
     return gridDom;
   }
-
-  searchDomNode(root, str) {
-
-  }
-
-  /*
-   let gridDom = document.querySelector('.content_grid');
-
-   */
 }
