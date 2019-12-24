@@ -6,7 +6,7 @@ export class PaginationView {
     this.data = data;
   }
 
-  render({ currentPage, nextClick, pageNumClick, prevClick }) {
+  render({ currentPage, pageNumClick }) {
     let paginationDom = document.querySelector('.pagination');
     if (!paginationDom) {
       document.querySelector('.app_root').insertAdjacentHTML('beforeend', PaginationTemplate.getHTML(this.calculatePages(this.data), currentPage));
@@ -14,14 +14,11 @@ export class PaginationView {
       document.querySelectorAll('.pagination').forEach(x => {
         x.replaceWith(this.createDomNode(PaginationTemplate.getHTML(this.calculatePages(this.data), currentPage)));
       });
+      document.querySelectorAll('.pagination').forEach(x => {
+        x.addEventListener('click', pageNumClick);
+      });
     }
-    this.addEventListeners(prevClick, pageNumClick, nextClick);
-  }
-
-  addEventListeners(prevClick, pageClick, nextClick) {
-    document.querySelector('.prev_button').addEventListener('click', prevClick);
-    document.querySelector('.pagination').addEventListener('click', pageClick);
-    document.querySelector('.next_button').addEventListener('click', nextClick);
+    // document.querySelector('.pagination').addEventListener('click', pageNumClick);
   }
 
   calculatePages() {
@@ -37,7 +34,12 @@ export class PaginationView {
     return dom;
   }
 
-  clone() {
-    return document.querySelector('.pagination').cloneNode(true);
+  clone(clickHandler) {
+    let clone = document.querySelector('.pagination').cloneNode(true);
+    clone.addEventListener('click', clickHandler);
+    document.querySelector('.app_root').insertAdjacentElement('beforeend', clone);
+    document.querySelectorAll('.pagination').forEach(x => {
+      x.addEventListener('click', clickHandler);
+    });
   }
 }

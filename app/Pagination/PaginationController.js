@@ -12,33 +12,34 @@ export class PaginationController {
   showPagination() {
     this.view.render({
       currentPage: this.currentPage,
-      prevClick: this.previousButtonClickHandler,
       pageNumClick: this.pageNumberClickHandler,
-      nextClick: this.nextButtonClickHandler,
     });
   }
 
-  previousButtonClickHandler = () => {
-    this.currentPage--;
-    Observer.notify('page-change', this.currentPage);
-    this.showPagination();
-  };
-
-  nextButtonClickHandler = () => {
-    this.currentPage++;
-    Observer.notify('page-change', this.currentPage);
-    this.showPagination();
-  };
-
   pageNumberClickHandler = (ev) => {
-    if (ev.target.innerText) {
+    if (ev.target.parentNode.classList.contains('uk-pagination-previous')) {
+      this.currentPage--;
+      Observer.notify('page-change', this.currentPage);
+      this.showPagination();
+    }
+    if (ev.target.parentNode.classList.contains('uk-pagination-next')) {
+      this.currentPage++;
+      Observer.notify('page-change', this.currentPage);
+      this.showPagination();
+    }
+    if (ev.target.matches('.page_num')) {
       this.currentPage = +ev.target.innerText;
       Observer.notify('page-change', this.currentPage);
       this.showPagination();
     }
+    ev.target.scrollTo({
+      top: 10,
+      left: 10,
+      behavior: 'smooth',
+    });
   };
 
   clone() {
-    document.querySelector('.app_root').insertAdjacentElement('beforeend', this.view.clone());
+    this.view.clone(this.pageNumberClickHandler);
   }
 }
