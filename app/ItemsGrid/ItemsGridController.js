@@ -1,4 +1,5 @@
 import { PaginationController } from '../Pagination/PaginationController.js';
+import { SearchFilterController } from '../SearchFilter/SearchFilterController.js';
 import { DEFAULT_PAGE_NUMBER_ON_START } from '../utils/config.js';
 import { Observer } from '../utils/Observer.js';
 import { ItemsGridModel } from './ItemsGridModel.js';
@@ -10,6 +11,7 @@ export class ItemsGridController {
     this.view = new ItemsGridView();
     this.modalController = modalController;
     this.paginationController = new PaginationController();
+    this.searchFilterController = new SearchFilterController();
     this.currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     this.duplicatePagination = true;
     Observer.subscribe('page-change', this.showGrid);
@@ -17,9 +19,11 @@ export class ItemsGridController {
 
   showGrid = (currentPage = this.currentPage) => {
     let data = this.model.getItems();
+
     if (!currentPage) {
       currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     }
+    this.searchFilterController.showSearchFilter();
     this.paginationController.showPagination(this.model.getItems());
     this.view.render({
       currentPage: currentPage,
