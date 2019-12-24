@@ -1,21 +1,18 @@
-import { DetailsModalBirdsTemplate } from './DetailsModalBirdsTemplate.js';
-import { DetailsModalCatsTemplate } from './DetailsModalCatsTemplate.js';
-import { DetailsModalDogsTemplate } from './DetailsModalDogsTemplate.js';
-import { DetailsModalFishesTemplate } from './DetailsModalFishesTemplate.js';
+import { DetailsModalTemplate } from './DetailsModalTemplate.js';
 
 export class DetailsModalView {
   constructor() {
     this.templates = {
-      'cat': DetailsModalCatsTemplate.getHTML,
-      'dog': DetailsModalDogsTemplate.getHTML,
-      'fish': DetailsModalFishesTemplate.getHTML,
-      'bird': DetailsModalBirdsTemplate.getHTML,
+      'cat': DetailsModalTemplate.getCatsHTML,
+      'dog': DetailsModalTemplate.getDogsHTML,
+      'fish': DetailsModalTemplate.getFishesHTML,
+      'bird': DetailsModalTemplate.getBirdsHTML,
     };
     this.root = document.querySelector('.details_modal');
   }
 
   render(data) {
-    this.root.innerHTML = this.templates[data.species](data);
+    this.root.innerHTML = DetailsModalTemplate.getDetails(data, this.templates[data.species]);
     this.addEventListenersToClose();
   }
 
