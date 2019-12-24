@@ -73,9 +73,10 @@
                 <!--pagination-->
                 <div class="uk-flex uk-flex-center">
                     <ul class="uk-pagination" uk-margin>
-                        <li><a href="#"><span uk-pagination-previous></span></a></li>
+                        <li><a class="prev_button uk-disabled" href="#"><span uk-pagination-previous></span></a></li>
                         <li><a href="#">1</a></li>
-                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
                         <li><a href="#">4</a></li>
                         <li><a href="#">5</a></li>
                         <li><a href="#">6</a></li>
@@ -83,8 +84,6 @@
                         <li><a href="#">8</a></li>
                         <li><a href="#">9</a></li>
                         <li><a href="#">10</a></li>
-                        <li class="uk-disabled"><span>...</span></li>
-                        <li><a href="#">20</a></li>
                         <li><a href="#"><span uk-pagination-next></span></a></li>
                     </ul>
                 </div>
@@ -379,7 +378,7 @@
             <button uk-toggle="target: #details_modal" type="button">show modal</button>
 
             <!-- This is the modal -->
-            <div id="details_modal" class="details_modal uk-modal uk-open" uk-modal="" style="display: block;">
+            <div id="details_modal" class="details_modal uk-modal uk-open" uk-modal="" style="display: none;">
                 <div class="uk-modal-dialog uk-modal-body uk-padding-small">
                     <button class="modal_close uk-modal-close-default uk-flex-right uk-icon uk-close"
                             type="button" uk-close="">

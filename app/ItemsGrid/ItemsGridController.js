@@ -1,32 +1,29 @@
+import { DEFAULT_PAGE_NUMBER_ON_START } from '../utils/config.js';
+import { Observer } from '../utils/Observer.js';
 import { ItemsGridModel } from './ItemsGridModel.js';
 import { ItemsGridView } from './ItemsGridView.js';
 
 export class ItemsGridController {
   constructor(modalController) {
-    this.model = new ItemsGridModel();
+    this.model = new ItemsGridModel(localStorage.getItem('animals'));
     this.view = new ItemsGridView();
     this.modalController = modalController;
-    this.currentPage = 1;
-    this.pageCount = 20;
+    this.currentPage = DEFAULT_PAGE_NUMBER_ON_START;
+    Observer.subscribe('page-change', this.showGrid);
   }
 
-  async showGrid(root, currentPage) {
-    await this.model.getItems()
-      .then(data => {
-        if (!currentPage) {
-          currentPage = this.currentPage;
-        }
-        else {
-          this.currentPage = currentPage;
-        }
+  showGrid = (currentPage = this.currentPage) => {
+    let data = this.model.getItems();
+    if (!currentPage) {
+      currentPage = DEFAULT_PAGE_NUMBER_ON_START;
+    }
 
-        let pagedData = data.slice((currentPage - 1) * this.pageCount, currentPage * this.pageCount);
-
-        this.view.render(root, pagedData, {
-          buyClick: this.buyButtonClickHandler,
-          detailsClick: this.detailsButtonClickHandler,
-        });
-      });
+    this.view.render({
+      currentPage: currentPage,
+      data: data,
+      buyClick: this.buyButtonClickHandler,
+      detailsClick: this.detailsButtonClickHandler,
+    });
   };
 
   buyButtonClickHandler = (data) => {

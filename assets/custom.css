@@ -102,3 +102,18 @@ div.details_photo img {
 .details_modal > div {
     max-width: 450px !important;
 }
+
+.pagination {
+    margin: 0;
+}
+
+.pagination .uk-active a {
+    font-weight: bolder;
+    color: #ff0000 !important;
+}
+
+.pagination a {
+    font-size: large;
+    font-weight: bold;
+    color: #000000 !important;
+}

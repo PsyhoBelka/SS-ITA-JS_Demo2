@@ -1,3 +1,4 @@
+import { DEFAULT_ITEMS_ON_PAGE } from '../utils/config.js';
 import { ItemsGridTemplate } from './ItemsGridTemplate.js';
 
 export class ItemsGridView {
@@ -5,16 +6,16 @@ export class ItemsGridView {
     this.template = new ItemsGridTemplate();
   }
 
-  render(root, items, { buyClick, detailsClick }) {
-    let gridDom = root.querySelector('.content_grid');
-
+  render({ data, currentPage, buyClick, detailsClick }) {
+    let gridDom = document.querySelector('.content_grid');
+    let pagedData = data.slice((currentPage - 1) * DEFAULT_ITEMS_ON_PAGE, currentPage * DEFAULT_ITEMS_ON_PAGE);
     if (!gridDom) {
-      root.insertAdjacentElement('beforeend', this.createDomNode(this.template.getHTML(items)));
+      document.querySelector('.app_root').insertAdjacentElement('beforeend', this.createDomNode(this.template.getHTML(pagedData)));
     } else {
-      gridDom.replaceWith(this.createDomNode(this.template.getHTML(items)));
+      gridDom.replaceWith(this.createDomNode(this.template.getHTML(pagedData)));
     }
 
-    this.addParentListener(items, buyClick, detailsClick);
+    this.addParentListener(pagedData, buyClick, detailsClick);
   }
 
   addParentListener(items, buyClick, detailsClick) {
