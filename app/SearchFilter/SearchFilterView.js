@@ -2,7 +2,7 @@ import { SearchFilterTemplate } from './SearchFilterTemplate.js';
 
 export class SearchFilterView {
 
-  render() {
+  render({ inputHandler }) {
     let elemDom = document.querySelector('.search_filter');
     if (!elemDom) {
       document.querySelector('.app_root').insertAdjacentHTML('beforeend', SearchFilterTemplate.getHTML());
@@ -10,11 +10,6 @@ export class SearchFilterView {
 
     }
     elemDom = document.querySelector('.search_filter');
-    elemDom.addEventListener('keydown', (ev) => {
-      if (ev.key === 'Enter') {
-        ev.preventDefault();
-        console.log(ev);
-      }
-    }, false);
+    elemDom.addEventListener('keydown', inputHandler);
   }
 }

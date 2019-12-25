@@ -23,7 +23,7 @@ async function init() {
 
   await headerController.showHeader(root);
   await menuController.showMenu(root);
-  await itemsGridController.showGrid();
+  await itemsGridController.showGrid({});
   await footerController.showFooter(root);
 }
 

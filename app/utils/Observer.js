@@ -18,7 +18,6 @@ export class Observer {
 
   static notify = (event, data) => {
     if (this.subscribers.hasOwnProperty(event)) {
-      console.log(event, Observer.subscribers[event]);
       this.subscribers[event].forEach(sub => sub(data));
     }
   };

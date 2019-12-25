@@ -5,12 +5,10 @@ export class SearchFilterController {
     this.view = new SearchFilterView();
   }
 
-  showSearchFilter() {
-    this.view.render();
+  showSearchFilter(searchInputHandler) {
+    this.view.render({ inputHandler: searchInputHandler });
   }
 
-  searchInputHandler() {
-  }
 
   filterSelectHandler() {
   }

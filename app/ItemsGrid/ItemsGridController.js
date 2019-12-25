@@ -12,19 +12,18 @@ export class ItemsGridController {
     this.modalController = modalController;
     this.paginationController = new PaginationController();
     this.searchFilterController = new SearchFilterController();
-    this.currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     this.duplicatePagination = true;
     Observer.subscribe('page-change', this.showGrid);
   }
 
-  showGrid = (currentPage = this.currentPage) => {
-    let data = this.model.getItems();
+  showGrid = ({ dataToShow, currentPage }) => {
+    let data = !dataToShow ? this.model.getItems() : dataToShow;
 
     if (!currentPage) {
       currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     }
-    this.searchFilterController.showSearchFilter();
-    this.paginationController.showPagination(this.model.getItems());
+    this.searchFilterController.showSearchFilter(this.searchInputHandler);
+    this.paginationController.showPagination(data);
     this.view.render({
       currentPage: currentPage,
       data: data,
@@ -34,6 +33,14 @@ export class ItemsGridController {
     if (this.duplicatePagination) {
       this.paginationController.clone();
       this.duplicatePagination = false;
+    }
+  };
+
+  searchInputHandler = (ev) => {
+    if (ev.key === 'Enter') {
+      ev.preventDefault();
+      console.log(ev);
+
     }
   };
 

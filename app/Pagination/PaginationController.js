@@ -20,15 +20,18 @@ export class PaginationController {
   pageNumberClickHandler = (ev) => {
     if (ev.target.parentNode.classList.contains('uk-pagination-previous')) {
       this.currentPage--;
-      Observer.notify('page-change', this.currentPage);
+      Observer.notify('page-change', { currentPage: this.currentPage });
+      ev.preventDefault();
     }
     if (ev.target.parentNode.classList.contains('uk-pagination-next')) {
       this.currentPage++;
-      Observer.notify('page-change', this.currentPage);
+      Observer.notify('page-change', { currentPage: this.currentPage });
+      ev.preventDefault();
     }
     if (ev.target.matches('.page_num')) {
       this.currentPage = +ev.target.innerText;
-      Observer.notify('page-change', this.currentPage);
+      Observer.notify('page-change', { currentPage: this.currentPage });
+      ev.preventDefault();
     }
     ev.target.scrollTo({
       top: 10,
