@@ -28,3 +28,8 @@ export class Observer {
     }
   };
 }
+
+/*
+page-change - itemsGridController.showGrid
+
+ */

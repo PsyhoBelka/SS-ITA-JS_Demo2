@@ -1,3 +1,4 @@
+import { Observer } from '../utils/Observer.js';
 import { SearchFilterTemplate } from './SearchFilterTemplate.js';
 
 export class SearchFilterView {
@@ -9,7 +10,12 @@ export class SearchFilterView {
     } else {
 
     }
-    elemDom = document.querySelector('.search_filter');
-    elemDom.addEventListener('keydown', inputHandler);
+    document.querySelector('.search_filter').addEventListener('keydown', inputHandler);
+    document.querySelector('.search__clear_input').addEventListener('click', this.clearInputClickHandler);
+  }
+
+  clearInputClickHandler(ev) {
+    document.querySelector('.search_input').value = '';
+    Observer.notify('clear-search-input', '');
   }
 }

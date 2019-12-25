@@ -9,6 +9,7 @@ export class ItemsGridView {
   render({ data, currentPage, buyClick, detailsClick }) {
     let gridDom = document.querySelector('.content_grid');
     let pagedData = data.slice((currentPage - 1) * DEFAULT_ITEMS_ON_PAGE, currentPage * DEFAULT_ITEMS_ON_PAGE);
+
     if (!gridDom) {
       document.querySelector('.app_root').insertAdjacentElement('beforeend', this.createDomNode(this.template.getHTML(pagedData)));
     } else {
@@ -29,7 +30,7 @@ export class ItemsGridView {
 
     if (elemId) {
       const data = items.find(x => x.id === +elemId);
-      console.log(data);
+
       switch (ev.target.innerText.toLowerCase()) {
         case 'details':
           detailsClick(data);

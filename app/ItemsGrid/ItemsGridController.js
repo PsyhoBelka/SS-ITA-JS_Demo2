@@ -14,6 +14,7 @@ export class ItemsGridController {
     this.searchFilterController = new SearchFilterController();
     this.duplicatePagination = true;
     Observer.subscribe('page-change', this.showGrid);
+    Observer.subscribe('clear-search-input', this.clearSearchInputHandler);
   }
 
   showGrid = ({ dataToShow, currentPage }) => {
@@ -23,7 +24,7 @@ export class ItemsGridController {
       currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     }
     this.searchFilterController.showSearchFilter(this.searchInputHandler);
-    this.paginationController.showPagination(data);
+    this.paginationController.showPagination({ data, page: currentPage });
     this.view.render({
       currentPage: currentPage,
       data: data,
@@ -37,11 +38,25 @@ export class ItemsGridController {
   };
 
   searchInputHandler = (ev) => {
-    if (ev.key === 'Enter') {
-      ev.preventDefault();
-      console.log(ev);
+    let filteredData;
+    let key = ev.key;
+    let inputValue = ev.target.value.toLowerCase();
 
+    if (inputValue === '') {
+      filteredData = this.model.getItems();
+    } else {
+      filteredData = this.model.items.filter(x => {
+        return x.species === inputValue;
+      });
     }
+    if (key === 'Enter') {
+      ev.preventDefault();
+      this.showGrid({ dataToShow: filteredData });
+    }
+  };
+
+  clearSearchInputHandler = () => {
+    this.showGrid({ dataToShow: this.model.getItems() });
   };
 
   buyButtonClickHandler = (data) => {
@@ -49,7 +64,6 @@ export class ItemsGridController {
   };
 
   detailsButtonClickHandler = (data) => {
-    console.log('details button clock', data);
     this.modalController.showModal(data);
   };
 }

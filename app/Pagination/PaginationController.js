@@ -9,10 +9,11 @@ export class PaginationController {
     this.currentPage = DEFAULT_PAGE_NUMBER_ON_START;
   }
 
-  showPagination(data) {
+  showPagination({ data, page }) {
+    this.data = data;
     this.view.render({
       data: data,
-      currentPage: this.currentPage,
+      currentPage: page ? page : this.currentPage,
       pageNumClick: this.pageNumberClickHandler,
     });
   }
@@ -20,18 +21,13 @@ export class PaginationController {
   pageNumberClickHandler = (ev) => {
     if (ev.target.parentNode.classList.contains('uk-pagination-previous')) {
       this.currentPage--;
-      Observer.notify('page-change', { currentPage: this.currentPage });
-      ev.preventDefault();
-    }
-    if (ev.target.parentNode.classList.contains('uk-pagination-next')) {
+      Observer.notify('page-change', { dataToShow: this.data, currentPage: this.currentPage });
+    } else if (ev.target.parentNode.classList.contains('uk-pagination-next')) {
       this.currentPage++;
-      Observer.notify('page-change', { currentPage: this.currentPage });
-      ev.preventDefault();
-    }
-    if (ev.target.matches('.page_num')) {
+      Observer.notify('page-change', { dataToShow: this.data, currentPage: this.currentPage });
+    } else if (ev.target.matches('.page_num')) {
       this.currentPage = +ev.target.innerText;
-      Observer.notify('page-change', { currentPage: this.currentPage });
-      ev.preventDefault();
+      Observer.notify('page-change', { dataToShow: this.data, currentPage: this.currentPage });
     }
     ev.target.scrollTo({
       top: 10,

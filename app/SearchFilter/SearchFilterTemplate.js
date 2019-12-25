@@ -5,8 +5,12 @@ export class SearchFilterTemplate {
         <div class="search_filter uk-flex uk-flex-center">
             <div class="uk-margin uk-margin-remove-vertical">
                 <form class="uk-flex" action="#">
-                    <input class="uk-input uk-form-small uk-width-large uk-flex-inline" type="text"
-                           placeholder="search by breed">
+                    <div class="uk-inline">
+                        <a href="#" class="search__clear_input uk-form-icon uk-form-icon-flip"
+                           uk-icon="icon: close"></a>
+                        <input class="search_input uk-input uk-form-small uk-width-large uk-flex-inline" type="text"
+                               placeholder="enter breed and press Enter">
+                    </div>
                     <select class="uk-select uk-form-small uk-width-small uk-flex-inline">
                         <option value="default">---sort by---</option>
                         <option value="price_asc">sort by price asc</option>

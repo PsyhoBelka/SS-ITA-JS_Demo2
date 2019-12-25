@@ -5,6 +5,7 @@ export class ItemsGridModel {
   }
 
   getItems() {
+    this.items = JSON.parse(localStorage.getItem('animals'));
     return this.items;
   }
 }

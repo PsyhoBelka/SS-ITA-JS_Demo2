@@ -14,7 +14,9 @@ export class PaginationView {
       });
     }
     document.querySelectorAll('.pagination').forEach(x => {
-      x.addEventListener('click', pageNumClick);
+      x.addEventListener('click', (ev) => {
+        pageNumClick(ev, { dataToShow: this.data, currentPage: currentPage });
+      });
     });
   }
 

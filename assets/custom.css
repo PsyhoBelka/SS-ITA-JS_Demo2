@@ -117,3 +117,7 @@ div.details_photo img {
     font-weight: bold;
     color: #000000 !important;
 }
+
+input::placeholder {
+    font-style: italic;
+}
