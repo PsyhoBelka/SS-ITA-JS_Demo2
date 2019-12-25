@@ -8,8 +8,10 @@ export class SearchFilterView {
     if (!elemDom) {
       document.querySelector('.app_root').insertAdjacentHTML('beforeend', SearchFilterTemplate.getHTML());
     }
+
     document.querySelector('.search_filter').addEventListener('keydown', this.searchInputEnterPressHandler);
     document.querySelector('.search__clear_input').addEventListener('click', this.clearInputClickHandler);
+    document.querySelector('.select_sort').addEventListener('change', this.changeSortSelectHandler);
   }
 
   searchInputEnterPressHandler(ev) {
@@ -18,6 +20,12 @@ export class SearchFilterView {
 
   clearInputClickHandler() {
     document.querySelector('.search_input').value = '';
+    document.querySelector('.select_sort').value = 'default';
     Observer.notify('clear-search-input', '');
+  }
+
+  changeSortSelectHandler(ev) {
+    console.log(ev.target.value);
+    Observer.notify('change-sort', ev);
   }
 }

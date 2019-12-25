@@ -11,7 +11,7 @@ export class SearchFilterTemplate {
                         <input class="search_input uk-input uk-form-small uk-width-large uk-flex-inline" type="text"
                                placeholder="enter breed and press Enter">
                     </div>
-                    <select class="uk-select uk-form-small uk-width-small uk-flex-inline">
+                    <select class="select_sort uk-select uk-form-small uk-width-small uk-flex-inline">
                         <option value="default">---sort by---</option>
                         <option value="price_asc">sort by price asc</option>
                         <option value="price_desc">sort by price desc</option>
