@@ -46,7 +46,7 @@ export class ItemsGridController {
       filteredData = this.model.getItems();
     } else {
       filteredData = this.model.items.filter(x => {
-        return x.species === inputValue;
+        return (x.species.includes(inputValue) || x.breed.includes(inputValue));
       });
     }
     if (key === 'Enter') {
