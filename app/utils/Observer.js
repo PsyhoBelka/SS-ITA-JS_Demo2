@@ -1,14 +1,6 @@
 export class Observer {
   static subscribers = {};
 
-  static getActions() {
-    return {
-      subscribe: this.subscribe,
-      notify: this.notify,
-      unsubscribe: this.unsubscribe,
-    };
-  }
-
   static subscribe = (event, func) => {
     if (!this.subscribers.hasOwnProperty(event)) {
       this.subscribers[event] = [];
@@ -31,5 +23,6 @@ export class Observer {
 
 /*
 page-change - itemsGridController.showGrid
-
+clear-search-input - itemsGridController.clearSearchInputHandler
+details-button-click - modalDetailsController.showModal
  */

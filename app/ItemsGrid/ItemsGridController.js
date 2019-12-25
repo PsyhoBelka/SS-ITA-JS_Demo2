@@ -6,10 +6,9 @@ import { ItemsGridModel } from './ItemsGridModel.js';
 import { ItemsGridView } from './ItemsGridView.js';
 
 export class ItemsGridController {
-  constructor(modalController) {
+  constructor() {
     this.model = new ItemsGridModel(localStorage.getItem('animals'));
     this.view = new ItemsGridView();
-    this.modalController = modalController;
     this.paginationController = new PaginationController();
     this.searchFilterController = new SearchFilterController();
     this.duplicatePagination = true;
@@ -64,6 +63,6 @@ export class ItemsGridController {
   };
 
   detailsButtonClickHandler = (data) => {
-    this.modalController.showModal(data);
+    Observer.notify('details-button-click', data);
   };
 }

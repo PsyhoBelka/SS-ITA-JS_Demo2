@@ -13,17 +13,13 @@ export class DetailsModalView {
 
   render(data) {
     this.root.innerHTML = DetailsModalTemplate.getDetails(data, this.templates[data.species]);
-    this.addEventListenersToClose();
+    document.querySelectorAll('.modal_close').forEach(x => x.addEventListener('click', this.closeButtonClickHandler));
   }
 
-  addEventListenersToClose() {
-    document.querySelectorAll('.modal_close').forEach(x => {
-      x.addEventListener('click', () => {
-        this.root.style.removeProperty('display');
-        document.body.style.removeProperty('overflow-y');
-        document.documentElement.classList.remove('uk-modal-page');
-        this.root.innerHTML = '';
-      });
-    });
-  }
+  closeButtonClickHandler = () => {
+    this.root.style.removeProperty('display');
+    document.body.style.removeProperty('overflow-y');
+    document.documentElement.classList.remove('uk-modal-page');
+    this.root.innerHTML = '';
+  };
 }
