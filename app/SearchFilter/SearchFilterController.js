@@ -5,8 +5,8 @@ export class SearchFilterController {
     this.view = new SearchFilterView();
   }
 
-  showSearchFilter(searchInputHandler) {
-    this.view.render({ inputHandler: searchInputHandler });
+  showSearchFilter() {
+    this.view.render();
   }
 
 

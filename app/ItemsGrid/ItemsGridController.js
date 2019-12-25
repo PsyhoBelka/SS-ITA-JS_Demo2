@@ -14,6 +14,7 @@ export class ItemsGridController {
     this.duplicatePagination = true;
     Observer.subscribe('page-change', this.showGrid);
     Observer.subscribe('clear-search-input', this.clearSearchInputHandler);
+    Observer.subscribe('search-input', this.searchInputHandler);
   }
 
   showGrid = ({ dataToShow, currentPage }) => {
@@ -22,7 +23,7 @@ export class ItemsGridController {
     if (!currentPage) {
       currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     }
-    this.searchFilterController.showSearchFilter(this.searchInputHandler);
+    this.searchFilterController.showSearchFilter();
     this.paginationController.showPagination({ data, page: currentPage });
     this.view.render({
       currentPage: currentPage,

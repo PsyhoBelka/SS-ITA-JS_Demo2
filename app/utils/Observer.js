@@ -22,7 +22,8 @@ export class Observer {
 }
 
 /*
-page-change - itemsGridController.showGrid
-clear-search-input - itemsGridController.clearSearchInputHandler
-details-button-click - modalDetailsController.showModal
+page-change           ItemsGridController.showGrid
+clear-search-input    ItemsGridController.clearSearchInputHandler
+details-button-click  ModalDetailsController.showModal
+search-input          ItemsGridController.searchInputHandler
  */
