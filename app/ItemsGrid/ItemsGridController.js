@@ -16,6 +16,8 @@ export class ItemsGridController {
     Observer.subscribe('clear-search-input', this.clearSearchInputHandler);
     Observer.subscribe('search-input', this.searchInputHandler);
     Observer.subscribe('change-sort', this.changeSortHandler);
+    // Observer.subscribe('details-button-click');
+    // Observer.subscribe('buy-button-click');
   }
 
   showGrid = ({ dataToShow, currentPage }) => {
@@ -60,6 +62,7 @@ export class ItemsGridController {
 
   buyButtonClickHandler = (data) => {
     console.log('buy button click', data);
+    Observer.notify('buy-button-click', data);
   };
 
   detailsButtonClickHandler = (data) => {

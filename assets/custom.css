@@ -125,3 +125,9 @@ input::placeholder {
 .cart_modal input[type=number] {
     width: 40px;
 }
+
+.cart_badge {
+    position: relative;
+    top: -5px;
+    left: 5px;
+}
