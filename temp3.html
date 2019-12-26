@@ -460,6 +460,50 @@
                 </div>
             </div>
         </div>
+        <!--cart modal container-->
+        <div>
+            <!-- This is a button toggling the modal -->
+            <button uk-toggle="target: #cart_modal" type="button">show cart</button>
+
+            <!--This is the modal-->
+            <div id="cart_modal" class="cart_modal uk-modal " style="display: none;" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-padding-small">
+                    <h1>Cart items:</h1>
+                    <table class="uk-table">
+                        <tbody>
+                        <tr>
+                            <td>photo</td>
+                            <td>name</td>
+                            <td>price</td>
+                            <td>input count</td>
+                            <td>total price</td>
+                        </tr>
+                        <tr>
+                            <td>photo</td>
+                            <td>name</td>
+                            <td>price</td>
+                            <td><input width="30px" type="number" value="4"></td>
+                            <td>total price</td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" class="uk-text-right">TOTAL:</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="uk-flex uk-flex-center uk-flex-around">
+                        <div class="uk-button uk-button-danger">
+                            Clear
+                        </div>
+                        <div class="uk-button  uk-button-primary">
+                            Finish
+                        </div>
+                        <div class="uk-button uk-button-secondary ">
+                            Close
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>

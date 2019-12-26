@@ -121,3 +121,7 @@ div.details_photo img {
 input::placeholder {
     font-style: italic;
 }
+
+.cart_modal input[type=number] {
+    width: 40px;
+}

@@ -24,6 +24,12 @@ export class Observer {
 /*
 page-change           ItemsGridController.showGrid
 clear-search-input    ItemsGridController.clearSearchInputHandler
-details-button-click  ModalDetailsController.showModal
 search-input          ItemsGridController.searchInputHandler
+
+details-button-click  ModalDetailsController.showModal
+
+buy-button-click      CartModalController.addToCart
+clear-button-click    CartModalController.clearCart
+show-cart             CartModalController.showCart
+finish-order          CartModalController.confirmCart
  */
