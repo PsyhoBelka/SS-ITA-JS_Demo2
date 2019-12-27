@@ -5,17 +5,8 @@ export class HeaderController {
     this.view = new HeaderView();
   }
 
-  cartClickHandler() {
-    console.log('click cart link');
-  }
-
-  loginClickHandler() {
-    console.log('click login link');
-  }
-
-  showHeader(root) {
-    root.insertAdjacentHTML('beforeend', this.view.render());
-    this.view.addEventListeners({ cart: this.cartClickHandler, login: this.loginClickHandler });
+  showHeader() {
+    this.view.render();
   }
 
 }
