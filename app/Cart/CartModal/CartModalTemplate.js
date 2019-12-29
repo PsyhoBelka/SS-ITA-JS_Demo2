@@ -1,43 +1,43 @@
 export class CartModalTemplate {
   static getHTML({ totals, data }) {
-    return `
-    
-                <div class="uk-modal-dialog uk-modal-body uk-padding-small">
-                    <h1>Cart items:</h1>
-                    <table class="uk-table">
-                        <tbody>
-                        
-                        ${this.getHTMLItem(data)}
-                        <tr>
-                            <td colspan="5" class="uk-text-right">TOTAL: $${totals}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="uk-flex uk-flex-center uk-flex-around">
-                        <div class="cart_button__clear uk-button uk-button-danger">
-                            Clear
-                        </div>
-                        <div class="cart_button__finish uk-button uk-button-primary">
-                            Finish
-                        </div>
-                        <div class="cart_button__close uk-button uk-button-secondary ">
-                            Close
-                        </div>
-                    </div>
-                </div>
-    `;
+    // language=HTML
+    return `<div class="uk-modal-dialog uk-modal-body uk-padding-small">
+    <h1>Cart items:</h1>
+    <div class="cart_table__content">
+        <table class="uk-table uk-table-middle">
+            <tbody>
+            ${this.getHTMLItem(data)}
+            </tbody>
+        </table>
+    </div>
+    <div class="uk-flex uk-flex-right uk-margin-medium-bottom">
+        TOTAL: $${totals.toFixed(2)}
+    </div>
+    <div class="uk-flex uk-flex-center uk-flex-around">
+        <div class="cart_button__clear uk-button uk-button-danger">
+            Clear
+        </div>
+        <div class="cart_button__finish uk-button uk-button-primary">
+            Finish
+        </div>
+        <div class="cart_button__close uk-button uk-button-secondary ">
+            Close
+        </div>
+    </div>
+</div>`;
   }
 
   static getHTMLItem(data) {
-    return data.map(() => {
+    return data.map((x) => {
       // language=HTML
       return `
-          <tr>
-              <td><img src="${data.image}" alt=""></td>
-              <td>$data.{breed}</td>
-              <td>${data.price}</td>
-              <td><input width="30px" type="number" value="${data.count}"></td>
-              <td>${data.price * data.count}</td>
+          <tr class="cart-item-${x.item.id}" valign="bottom">
+              <td><img src="${x.item.image}" alt="" width="80px"
+              onerror="this.onerror = null; this.src='assets/No-image-available.png';"></td>
+              <td>${x.item.breed}</td>
+              <td>$${x.item.price.toFixed(2)}</td>
+              <td><input width="30px" type="number" min="1" value="${x.count}"></td>
+              <td>$${(x.item.price * x.count).toFixed(2)}</td>
           </tr>
       `;
     }).join('');

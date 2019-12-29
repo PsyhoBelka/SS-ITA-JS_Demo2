@@ -1,4 +1,5 @@
 import { DEFAULT_ITEMS_ON_PAGE } from '../utils/config.js';
+import { Observer } from '../utils/Observer.js';
 import { ItemsGridTemplate } from './ItemsGridTemplate.js';
 
 export class ItemsGridView {
@@ -33,10 +34,12 @@ export class ItemsGridView {
 
       switch (ev.target.innerText.toLowerCase()) {
         case 'details':
-          detailsClick(data);
+          // detailsClick(data);
+          Observer.notify('details-button-click', data);
           break;
         case 'buy':
-          buyClick(data);
+          // buyClick(data);
+          Observer.notify('buy-button-click', data);
           break;
       }
     }

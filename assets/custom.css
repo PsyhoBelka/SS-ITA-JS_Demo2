@@ -135,3 +135,8 @@ input::placeholder {
 .cart_container, .login_container {
     width: 100px;
 }
+
+.cart_table__content {
+    max-height: 400px;
+    overflow: auto;
+}

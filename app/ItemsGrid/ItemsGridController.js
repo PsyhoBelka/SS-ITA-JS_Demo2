@@ -16,8 +16,6 @@ export class ItemsGridController {
     Observer.subscribe('clear-search-input', this.clearSearchInputHandler);
     Observer.subscribe('search-input', this.searchInputHandler);
     Observer.subscribe('change-sort', this.changeSortHandler);
-    // Observer.subscribe('details-button-click');
-    // Observer.subscribe('buy-button-click');
   }
 
   showGrid = ({ dataToShow, currentPage }) => {
@@ -31,8 +29,6 @@ export class ItemsGridController {
     this.view.render({
       currentPage: currentPage,
       data: data,
-      buyClick: this.buyButtonClickHandler,
-      detailsClick: this.detailsButtonClickHandler,
     });
     if (this.duplicatePagination) {
       this.paginationController.clone();
