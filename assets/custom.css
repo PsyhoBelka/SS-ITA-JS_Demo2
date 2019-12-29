@@ -131,3 +131,7 @@ input::placeholder {
     top: -5px;
     left: 5px;
 }
+
+.cart_container, .login_container {
+    width: 100px;
+}

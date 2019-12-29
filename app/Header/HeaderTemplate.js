@@ -7,7 +7,7 @@ export class HeaderTemplate {
         <h1> Animals shopper </h1>
     </div>
     <div class="uk-flex uk-flex-middle uk-flex-right uk-margin-medium-top">
-        <div class="cart_container uk-flex uk-flex-inline uk-width-small">
+        <div class="cart_container uk-flex uk-flex-inline">
             
         </div>
         <!--<hr class="uk-divider-vertical-custom">-->
