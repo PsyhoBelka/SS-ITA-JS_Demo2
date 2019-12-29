@@ -14,13 +14,13 @@ export class CartModalTemplate {
                         </tbody>
                     </table>
                     <div class="uk-flex uk-flex-center uk-flex-around">
-                        <div class="uk-button uk-button-danger">
+                        <div class="cart_button__clear uk-button uk-button-danger">
                             Clear
                         </div>
-                        <div class="uk-button  uk-button-primary">
+                        <div class="cart_button__finish uk-button uk-button-primary">
                             Finish
                         </div>
-                        <div class="uk-button uk-button-secondary ">
+                        <div class="cart_button__close uk-button uk-button-secondary ">
                             Close
                         </div>
                     </div>
