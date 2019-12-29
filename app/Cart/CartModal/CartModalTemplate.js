@@ -1,7 +1,7 @@
 export class CartModalTemplate {
   static getHTML({ totals, data }) {
     return `
-    <div id="cart_modal" class="cart_modal uk-modal " style="display: none;" uk-modal>
+    
                 <div class="uk-modal-dialog uk-modal-body uk-padding-small">
                     <h1>Cart items:</h1>
                     <table class="uk-table">
@@ -25,20 +25,19 @@ export class CartModalTemplate {
                         </div>
                     </div>
                 </div>
-            </div>
     `;
   }
 
-  static getHTMLItem({ image, breed, price, count }) {
+  static getHTMLItem(data) {
     return data.map(() => {
       // language=HTML
       return `
           <tr>
-              <td><img src="${image}" alt=""></td>
-              <td>${breed}</td>
-              <td>${price}</td>
-              <td><input width="30px" type="number" value="${count}"></td>
-              <td>${price * count}</td>
+              <td><img src="${data.image}" alt=""></td>
+              <td>$data.{breed}</td>
+              <td>${data.price}</td>
+              <td><input width="30px" type="number" value="${data.count}"></td>
+              <td>${data.price * data.count}</td>
           </tr>
       `;
     }).join('');

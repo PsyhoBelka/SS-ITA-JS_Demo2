@@ -1,14 +1,12 @@
-import { Observer } from '../utils/Observer.js';
-import { CartModalModel } from './CartModalModel.js';
+import { Observer } from '../../utils/Observer.js';
 import { CartModalView } from './CartModalView.js';
 
 export class CartModalController {
-  constructor() {
-    this.model = new CartModalModel();
+  constructor(model) {
+    this.model = model;
     this.view = new CartModalView();
     Observer.subscribe('buy-button-click', this.addToCart);
     Observer.subscribe('clear-button-click', this.clearCart);
-    Observer.subscribe('show-cart', this.showCart);
     Observer.subscribe('finish-order', this.confirmCart);
   }
 
