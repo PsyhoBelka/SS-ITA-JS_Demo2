@@ -3,7 +3,6 @@ import { CartModalTemplate } from './CartModalTemplate.js';
 
 export class CartModalView {
   render(data) {
-    console.log(data);
     let dom = document.querySelector('.cart_modal');
     dom.innerHTML = CartModalTemplate.getHTML(data);
     this.addEventListeners();
@@ -16,21 +15,19 @@ export class CartModalView {
     document.querySelector('.cart_table__content').addEventListener('change', this.changeInputHandler);
   }
 
-  changeInputHandler(ev) {
+  changeInputHandler = (ev) => {
     let itemId = ev.target.parentElement.parentElement.classList[0].match(/(?<=cart-item-)[0-9]+/g)[0];
-    console.log({ itemId, count: ev.target.value });
     Observer.notify('cart-item-count-change', { itemId, count: ev.target.value });
-    console.log(itemId);
-  }
+  };
 
-  clearButtonClickHandler() {
-    console.log('clear click');
+  clearButtonClickHandler = () => {
     Observer.notify('clear-button-click', null);
-  }
+  };
 
-  finishButtonClickHandler() {
-    console.log('finish click');
-  }
+  finishButtonClickHandler = () => {
+    Observer.notify('finish-order', null);
+    this.closeButtonClickHandler();
+  };
 
   closeButtonClickHandler = () => {
     const element = document.querySelector('.cart_modal');

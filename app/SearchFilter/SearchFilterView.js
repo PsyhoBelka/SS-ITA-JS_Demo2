@@ -25,7 +25,6 @@ export class SearchFilterView {
   }
 
   changeSortSelectHandler(ev) {
-    console.log(ev.target.value);
     Observer.notify('change-sort', ev);
   }
 }

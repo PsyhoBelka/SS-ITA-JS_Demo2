@@ -9,13 +9,6 @@ export class CartLinkView {
   }
 
   cartLinkClickHandler() {
-    console.log('cart link clicked!');
     Observer.notify('show-cart', null);
-  }
-
-  createDom(str) {
-    const dom = document.createElement('div');
-    dom.insertAdjacentHTML('afterbegin', str);
-    return dom.firstElementChild;
   }
 }

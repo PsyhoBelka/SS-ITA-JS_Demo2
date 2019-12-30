@@ -37,7 +37,6 @@ export class ItemsGridController {
   };
 
   searchInputHandler = (ev) => {
-    let filteredData;
     let key = ev.key;
     let inputValue = ev.target.value.toLowerCase();
 
@@ -56,18 +55,8 @@ export class ItemsGridController {
     this.showGrid({ dataToShow: this.model.getItems() });
   };
 
-  buyButtonClickHandler = (data) => {
-    console.log('buy button click', data);
-    Observer.notify('buy-button-click', data);
-  };
-
-  detailsButtonClickHandler = (data) => {
-    Observer.notify('details-button-click', data);
-  };
-
   changeSortHandler = (ev) => {
     const sortType = ev.target.value;
-    // let dataToShow = [...this.model.items];
 
     switch (sortType) {
       case 'price_asc': {

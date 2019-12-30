@@ -1,3 +1,4 @@
+import { Bot } from '../TelegramBot/Bot.js';
 import { Observer } from '../utils/Observer.js';
 import { CartLinkController } from './CartLink/CartLinkController.js';
 import { CartModalController } from './CartModal/CartModalController.js';
@@ -25,8 +26,6 @@ export class CartController {
   };
 
   addToCart = (item) => {
-    console.log(item);
-    // this.model.items.push({ item, count: 1 });
     this.model.addItem({ item, count: 1 });
     Observer.notify('cart-change', null);
   };
@@ -37,8 +36,10 @@ export class CartController {
   };
 
   confirmCart = () => {
-    //  send message with cart items
-    this.clearCart();
+    Bot.sendOrderMsg(this.model.items).then(() => {
+      this.clearCart();
+      alert('Order sent!');
+    });
   };
 
   cartItemCountChange = (data) => {
