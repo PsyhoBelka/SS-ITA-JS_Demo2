@@ -41,15 +41,16 @@ export class CartController {
         // Bot.sendOrderMsg(this.model.items).then(() => {
         this.clearCart();
         UIkit.notification({
-          message: '<span uk-icon="icon: check"></span>Order sent to admin! Thanks for order!',
+          message: '<span uk-icon="icon: check"></span>&nbsp;Order sent to admin!',
           status: 'success',
           pos: 'top-right',
           timeout: 3000,
         });
+        this.cartModalController.view.closeButtonClickHandler();
         // });
       } else {
         UIkit.notification({
-          message: '<span uk-icon="icon: warning"></span>Check you data!',
+          message: '<span uk-icon="icon: warning"></span>&nbsp;Check you data!',
           status: 'warning',
           pos: 'top-right',
           timeout: 3000,
@@ -57,7 +58,7 @@ export class CartController {
       }
     } else {
       UIkit.notification({
-        message: '<span uk-icon="icon: warning"></span>Cart is empty! Buy something before!',
+        message: '<span uk-icon="icon: warning"></span>&nbsp;Cart is empty!',
         status: 'warning',
         pos: 'top-right',
         timeout: 3000,

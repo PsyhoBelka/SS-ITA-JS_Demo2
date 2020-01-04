@@ -26,7 +26,7 @@ export class CartModalView {
 
   finishButtonClickHandler = () => {
     Observer.notify('finish-order', null);
-    this.closeButtonClickHandler();
+    // this.closeButtonClickHandler();
   };
 
   closeButtonClickHandler = () => {
@@ -48,7 +48,7 @@ export class CartModalView {
     const customerNotes = document.querySelector('.customer_details__notes');
     const formDanger = 'uk-form-danger';
 
-    if (!customerName.value.match(/(([a-zA-Z]+)\s?){1,3}/g)) {
+    if (!customerName.value.match(/(([a-zA-Z]+)[\s|-]?){1,5}/g)) {
       customerName.classList.add(formDanger);
       isValid--;
     } else {
