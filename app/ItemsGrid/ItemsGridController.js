@@ -18,17 +18,22 @@ export class ItemsGridController {
     Observer.subscribe('change-sort', this.changeSortHandler);
   }
 
-  showGrid = ({ dataToShow, currentPage }) => {
-    let data = !dataToShow ? this.model.getItems() : dataToShow;
+  showGrid = (items) => {
+
+    let dataToShow, currentPage;
+    if (items) {
+      ({ dataToShow, currentPage } = items);
+    }
+    dataToShow = !dataToShow ? this.model.getItems() : dataToShow;
 
     if (!currentPage) {
       currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     }
     this.searchFilterController.showSearchFilter();
-    this.paginationController.showPagination({ data, page: currentPage });
+    this.paginationController.showPagination({ data: dataToShow, page: currentPage });
     this.view.render({
       currentPage: currentPage,
-      data: data,
+      data: dataToShow,
     });
     if (this.duplicatePagination) {
       this.paginationController.clone();

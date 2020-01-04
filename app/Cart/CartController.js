@@ -36,14 +36,31 @@ export class CartController {
   };
 
   confirmCart = () => {
-    Bot.sendOrderMsg(this.model.items).then(() => {
-      this.clearCart();
-      alert('Order sent!');
-    });
+    this.cartModalController.view.validateCustomerData();
+    if (this.model.items.length > 0) {
+      Bot.sendOrderMsg(this.model.items).then(() => {
+        this.clearCart();
+        UIkit.notification({
+          message: '<span uk-icon="icon: check"></span>Order sent to admin! Thanks for order!',
+          status: 'success',
+          pos: 'top-right',
+          timeout: 3000,
+        });
+      });
+    } else {
+      UIkit.notification({
+        message: '<span uk-icon="icon: warning"></span>Cart is empty! Buy something before!',
+        status: 'warning',
+        pos: 'top-right',
+        timeout: 3000,
+      });
+    }
   };
 
   cartItemCountChange = (data) => {
     this.model.changeItemCount(data);
     this.renderModal();
   };
+
+
 }

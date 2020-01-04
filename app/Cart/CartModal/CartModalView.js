@@ -38,4 +38,10 @@ export class CartModalView {
     element.classList.remove('uk-open');
     element.innerHTML = '';
   };
+
+  validateCustomerData() {
+    let dataFields = document.querySelectorAll('.cart__customer_info tr td:last-child');
+    console.log(dataFields);
+    console.log(dataFields.forEach(x => console.log(x.firstElementChild.value)));
+  }
 }

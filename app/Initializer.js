@@ -6,6 +6,7 @@ import { ItemsGridController } from './ItemsGrid/ItemsGridController.js';
 import { MenuController } from './Menu/MenuController.js';
 import { API_URL } from './utils/config.js';
 
+//todo not better solution must be rewritten to pub\sub
 export class Initializer {
   static async init() {
     await fetch(`${API_URL}/animals`)
@@ -24,7 +25,7 @@ export class Initializer {
 
     await headerController.showHeader();
     await menuController.showMenu(root);
-    await itemsGridController.showGrid({});
+    await itemsGridController.showGrid();
     await footerController.showFooter(root);
   }
 }

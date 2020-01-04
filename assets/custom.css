@@ -94,7 +94,7 @@ div.details_photo img {
     font-weight: bold;
 }
 
-.details_table td {
+.details_table, .cart__customer_info td {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
@@ -140,3 +140,12 @@ input::placeholder {
     max-height: 400px;
     overflow: auto;
 }
+
+.uk-notification-message {
+    border-radius: 5px;
+}
+
+.uk-accordion-title::before {
+    background-image: none !important;
+}
+

@@ -13,6 +13,58 @@ export class CartModalTemplate {
     <div class="uk-flex uk-flex-right uk-margin-medium-bottom">
         TOTAL: $${totals.toFixed(2)}
     </div>
+    <div class="uk-flex uk-flex-left">
+        <ul uk-accordion>
+            <li>
+                <a class="uk-accordion-title" href="#">Please, specify additional order information &#11167;</a>
+                <div class="uk-accordion-content">
+                    <table class="cart__customer_info"></td>
+                        <tbody>
+                        <tr>
+                            <td class="uk-align-right uk-margin-remove-vertical">
+                                <label >Your name:</label>
+                            </td>
+                            <td class="uk-table-expand">
+                                <input type="text">*
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uk-align-right uk-margin-remove-vertical">
+                                <label >Your phone number:</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="0xx1234567">*
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uk-align-right uk-margin-remove-vertical">
+                                <label >You address:</label>
+                            </td>
+                            <td>
+                                <input type="text">*
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uk-align-right uk-margin-remove-vertical">
+                                <label >Your email:</label>
+                            </td>
+                            <td>
+                                <input type="email" placeholder="domain@example.com">*
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="uk-align-right uk-margin-remove-vertical">
+                                <label >Notes to order:</label>
+                            <td>
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ul>
+    </div>
     <div class="uk-flex uk-flex-center uk-flex-around">
         <div class="cart_button__clear uk-button uk-button-danger">
             Clear
