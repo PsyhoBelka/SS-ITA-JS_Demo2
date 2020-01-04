@@ -1,4 +1,3 @@
-import { Bot } from '../TelegramBot/Bot.js';
 import { Observer } from '../utils/Observer.js';
 import { CartLinkController } from './CartLink/CartLinkController.js';
 import { CartModalController } from './CartModal/CartModalController.js';
@@ -36,9 +35,10 @@ export class CartController {
   };
 
   confirmCart = () => {
-    this.cartModalController.view.validateCustomerData();
     if (this.model.items.length > 0) {
-      Bot.sendOrderMsg(this.model.items).then(() => {
+      const validateCustomerData = this.cartModalController.view.validateCustomerData();
+      if (validateCustomerData.valid) {
+        // Bot.sendOrderMsg(this.model.items).then(() => {
         this.clearCart();
         UIkit.notification({
           message: '<span uk-icon="icon: check"></span>Order sent to admin! Thanks for order!',
@@ -46,7 +46,15 @@ export class CartController {
           pos: 'top-right',
           timeout: 3000,
         });
-      });
+        // });
+      } else {
+        UIkit.notification({
+          message: '<span uk-icon="icon: warning"></span>Check you data!',
+          status: 'warning',
+          pos: 'top-right',
+          timeout: 3000,
+        });
+      }
     } else {
       UIkit.notification({
         message: '<span uk-icon="icon: warning"></span>Cart is empty! Buy something before!',

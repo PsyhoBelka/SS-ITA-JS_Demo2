@@ -16,7 +16,7 @@ export class CartModalView {
   }
 
   changeInputHandler = (ev) => {
-    let itemId = ev.target.parentElement.parentElement.classList[0].match(/(?<=cart-item-)[0-9]+/g)[0];
+    const itemId = ev.target.parentElement.parentElement.classList[0].match(/(?<=cart-item-)[0-9]+/g)[0];
     Observer.notify('cart-item-count-change', { itemId, count: ev.target.value });
   };
 
@@ -40,8 +40,33 @@ export class CartModalView {
   };
 
   validateCustomerData() {
-    let dataFields = document.querySelectorAll('.cart__customer_info tr td:last-child');
-    console.log(dataFields);
-    console.log(dataFields.forEach(x => console.log(x.firstElementChild.value)));
+    let isValid = 5;
+    const customerName = document.querySelector('.customer_details__name');
+    const customerPhone = document.querySelector('.customer_details__phone');
+    const customerEmail = document.querySelector('.customer_details__email');
+    const customerAddress = document.querySelector('.customer_details__address');
+    const customerNotes = document.querySelector('.customer_details__notes');
+    const formDanger = 'uk-form-danger';
+
+    if (!customerName.value.match(/(([a-zA-Z]+)\s?){1,3}/g)) {
+      customerName.classList.add(formDanger);
+      isValid--;
+    } else {
+      customerName.classList.contains(formDanger) ? customerName.classList.remove(formDanger) : null;
+    }
+
+    if (customerAddress.value === '') {
+      customerAddress.classList.add(formDanger);
+      isValid--;
+    } else {
+      customerAddress.classList.contains(formDanger) ? customerAddress.classList.remove(formDanger) : null;
+    }
+
+
+    debugger;
+    return isValid === 5 ? {
+      valid: true,
+      customerData: { customerName, customerAddress, customerEmail, customerPhone, customerNotes },
+    } : { valid: false };
   }
 }
