@@ -19,9 +19,10 @@ export class Bot {
 
   static formatData(data) {
     return {
-      items: data.map(x => {
+      items: data.items.map(x => {
         return { id: x.item.id, breed: x.item.breed, count: x.count, price: x.item.price };
-      }), total_price: data.reduce((acc, curr) => acc + curr.item.price * curr.count, 0),
+      }), total_price: data.items.reduce((acc, curr) => acc + curr.item.price * curr.count, 0),
+      customerData: data.customerData,
     };
   }
 }

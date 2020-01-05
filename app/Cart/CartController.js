@@ -1,3 +1,4 @@
+import { Bot } from '../TelegramBot/Bot.js';
 import { Observer } from '../utils/Observer.js';
 import { CartLinkController } from './CartLink/CartLinkController.js';
 import { CartModalController } from './CartModal/CartModalController.js';
@@ -31,6 +32,7 @@ export class CartController {
 
   clearCart = () => {
     this.model.items = [];
+    this.model.removeCartData();
     Observer.notify('cart-change', null);
   };
 
@@ -38,16 +40,16 @@ export class CartController {
     if (this.model.items.length > 0) {
       const validateCustomerData = this.cartModalController.view.validateCustomerData();
       if (validateCustomerData.valid) {
-        // Bot.sendOrderMsg(this.model.items).then(() => {
-        this.clearCart();
-        UIkit.notification({
-          message: '<span uk-icon="icon: check"></span>&nbsp;Order sent to admin!',
-          status: 'success',
-          pos: 'top-right',
-          timeout: 3000,
+        Bot.sendOrderMsg({ items: this.model.items, customerData: validateCustomerData.customerData }).then(() => {
+          this.clearCart();
+          UIkit.notification({
+            message: '<span uk-icon="icon: check"></span>&nbsp;Order sent to admin!',
+            status: 'success',
+            pos: 'top-right',
+            timeout: 3000,
+          });
+          this.cartModalController.view.closeButtonClickHandler();
         });
-        this.cartModalController.view.closeButtonClickHandler();
-        // });
       } else {
         UIkit.notification({
           message: '<span uk-icon="icon: warning"></span>&nbsp;Check you data!',

@@ -26,7 +26,6 @@ export class CartModalView {
 
   finishButtonClickHandler = () => {
     Observer.notify('finish-order', null);
-    // this.closeButtonClickHandler();
   };
 
   closeButtonClickHandler = () => {
@@ -55,6 +54,20 @@ export class CartModalView {
       customerName.classList.contains(formDanger) ? customerName.classList.remove(formDanger) : null;
     }
 
+    if (!customerEmail.value.match(/[0-9a-zA-Z_\-.]+@[a-zA-Z.]+/g)) {
+      customerEmail.classList.add(formDanger);
+      isValid--;
+    } else {
+      customerEmail.classList.contains(formDanger) ? customerEmail.classList.remove(formDanger) : null;
+    }
+
+    if (!customerPhone.value.match(/0\d{9}/)) {
+      customerPhone.classList.add(formDanger);
+      isValid--;
+    } else {
+      customerPhone.classList.contains(formDanger) ? customerPhone.classList.remove(formDanger) : null;
+    }
+
     if (customerAddress.value === '') {
       customerAddress.classList.add(formDanger);
       isValid--;
@@ -62,11 +75,15 @@ export class CartModalView {
       customerAddress.classList.contains(formDanger) ? customerAddress.classList.remove(formDanger) : null;
     }
 
-
-    debugger;
     return isValid === 5 ? {
       valid: true,
-      customerData: { customerName, customerAddress, customerEmail, customerPhone, customerNotes },
+      customerData: {
+        customerName: customerName.value,
+        customerAddress: customerAddress.value,
+        customerEmail: customerEmail.value,
+        customerPhone: customerPhone.value,
+        customerNotes: customerNotes.value,
+      },
     } : { valid: false };
   }
 }

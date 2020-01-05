@@ -1,6 +1,11 @@
 export class CartModel {
   constructor() {
-    this.items = [];
+    const storedData = JSON.parse(localStorage.getItem('animal-cart'));
+    if (storedData) {
+      this.items = storedData;
+    } else {
+      this.items = [];
+    }
   }
 
   getSize() {
@@ -16,16 +21,30 @@ export class CartModel {
     } else {
       this.items.push({ item, count });
     }
+    this.updateCartData();
   }
 
   changeItemCount({ itemId, count }) {
     let item = this.items.find(x => x.item.id === +itemId);
     item.count = +count;
+    this.updateCartData();
   }
 
   getTotals() {
     return this.items.length === 0 ? 0 : this.items.reduce((acc, curr) => {
       return acc + curr.item.price * curr.count;
     }, 0);
+  }
+
+  updateCartData() {
+    if (this.items.length > 0) {
+      localStorage.setItem('animal-cart', JSON.stringify(this.items));
+    } else {
+      this.removeCartData();
+    }
+  }
+
+  removeCartData() {
+    localStorage.removeItem('animal-cart');
   }
 }
