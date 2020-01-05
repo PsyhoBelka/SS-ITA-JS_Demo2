@@ -18,7 +18,7 @@ export class CartModalTemplate {
             <li>
                 <a class="uk-accordion-title" href="#">Please, specify additional order information &#11167;</a>
                 <div class="uk-accordion-content">
-                    <form action="#" class="customer_details uk-form-horizontal">
+                    <form action="#" class="customer_details uk-form-stacked">
                         <div>
                             <div class="uk-form-label">
                                 <label>Your name:</label>
