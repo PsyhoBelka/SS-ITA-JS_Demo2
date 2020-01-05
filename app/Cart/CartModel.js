@@ -1,10 +1,15 @@
 export class CartModel {
   constructor() {
-    const storedData = JSON.parse(localStorage.getItem('animal-cart'));
-    if (storedData) {
+    let storedData = [];
+
+    try {
+      storedData = JSON.parse(localStorage.getItem('animal-cart'));
       this.items = storedData;
-    } else {
+    }
+    catch (e) {
+      console.error('Error loading cart from storage');
       this.items = [];
+      this.removeCartData();
     }
   }
 
