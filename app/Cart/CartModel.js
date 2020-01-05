@@ -4,13 +4,12 @@ export class CartModel {
 
     try {
       storedData = JSON.parse(localStorage.getItem('animal-cart'));
-      this.items = storedData;
     }
     catch (e) {
       console.error('Error loading cart from storage');
-      this.items = [];
       this.removeCartData();
     }
+    this.items = storedData ? storedData : [];
   }
 
   getSize() {
