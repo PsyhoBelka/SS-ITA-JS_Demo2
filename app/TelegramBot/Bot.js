@@ -9,20 +9,28 @@ export class Bot {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        chat_id: 476950254,
+        chat_id: -377489566,
         text: this.formatData(data),
         disable_notification: true,
+        parse_mode: 'Markdown',
       }),
     })
       .catch(er => console.error(er));
   }
 
   static formatData(data) {
-    return {
-      items: data.items.map(x => {
-        return { id: x.item.id, breed: x.item.breed, count: x.count, price: x.item.price };
-      }), total_price: data.items.reduce((acc, curr) => acc + curr.item.price * curr.count, 0),
-      customerData: data.customerData,
-    };
+    let output = '';
+    output += '=== *Order data* ===\n';
+    output += data.items.map(x => `(${x.item.id}) ${x.item.breed} - $${x.item.price}, count ${x.count}  (total ${x.count * x.item.price})\n`).join('');
+    output += '--------------------\n';
+    output += `Total price: ${data.items.reduce((acc, curr) => acc + curr.item.price * curr.count, 0)}\n`;
+    output += '=== *Customer data* ===\n';
+    output += `Name: ${data.customerData.customerName}\n`;
+    output += `Address: ${data.customerData.customerAddress}\n`;
+    output += `Email: ${data.customerData.customerEmail}\n`;
+    output += `Phone: ${data.customerData.customerPhone}\n`;
+    output += `Notes: ${data.customerData.customerNotes}\n`;
+    output += '=== *End order* ===';
+    return output;
   }
 }
