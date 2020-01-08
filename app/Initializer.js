@@ -4,16 +4,10 @@ import { FooterController } from './Footer/FooterController.js';
 import { HeaderController } from './Header/HeaderController.js';
 import { ItemsGridController } from './ItemsGrid/ItemsGridController.js';
 import { MenuController } from './Menu/MenuController.js';
-import { API_URL } from './utils/config.js';
 
 //todo not better solution must be rewritten to pub\sub
 export class Initializer {
   static async init() {
-    await fetch(`${API_URL}/animals`)
-      .then(resp => resp.json())
-      .then(data => {
-        localStorage.setItem('animals', JSON.stringify(data));
-      });
 
     const cartController = new CartController();
     const detailsModalController = new DetailsModalController();

@@ -7,7 +7,7 @@ import { ItemsGridView } from './ItemsGridView.js';
 
 export class ItemsGridController {
   constructor() {
-    this.model = new ItemsGridModel(localStorage.getItem('animals'));
+    this.model = new ItemsGridModel();
     this.view = new ItemsGridView();
     this.paginationController = new PaginationController();
     this.searchFilterController = new SearchFilterController();

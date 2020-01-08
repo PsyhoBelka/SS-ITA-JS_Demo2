@@ -21,9 +21,9 @@ export class Bot {
   static formatData(data) {
     let output = '';
     output += '=== *Order data* ===\n';
-    output += data.items.map(x => `(${x.item.id}) ${x.item.breed} - $${x.item.price}, count ${x.count}  (total ${x.count * x.item.price})\n`).join('');
+    output += data.items.map(x => `(${x.item.id}) ${x.item.breed} - $${x.item.price}, count ${x.count} (total $${x.count * x.item.price})\n`).join('');
     output += '--------------------\n';
-    output += `Total price: ${data.items.reduce((acc, curr) => acc + curr.item.price * curr.count, 0)}\n`;
+    output += `Total price: ${data.items.reduce((acc, curr) => acc + curr.item.price * curr.count, 0)}\n\n`;
     output += '=== *Customer data* ===\n';
     output += `Name: ${data.customerData.customerName}\n`;
     output += `Address: ${data.customerData.customerAddress}\n`;
