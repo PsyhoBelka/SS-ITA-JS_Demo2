@@ -9,7 +9,7 @@ export class SearchFilterTemplate {
                         <a href="#" class="search__clear_input uk-form-icon uk-form-icon-flip"
                            uk-icon="icon: close"></a>
                         <input class="search_input uk-input uk-form-small uk-width-large uk-flex-inline" type="text"
-                               placeholder="enter breed and press Enter">
+                               placeholder="enter breed or species and press Enter">
                     </div>
                     <select class="select_sort uk-select uk-form-small uk-width-small uk-flex-inline">
                         <option value="default">---sort by---</option>

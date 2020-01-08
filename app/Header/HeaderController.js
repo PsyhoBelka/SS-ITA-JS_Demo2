@@ -1,3 +1,4 @@
+import { Observer } from '../utils/Observer.js';
 import { HeaderView } from './HeaderView.js';
 
 export class HeaderController {
@@ -7,6 +8,7 @@ export class HeaderController {
 
   showHeader() {
     this.view.render();
+    Observer.notify('header-load', null);
   }
 
 }

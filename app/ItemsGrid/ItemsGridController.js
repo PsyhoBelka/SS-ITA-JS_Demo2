@@ -16,23 +16,24 @@ export class ItemsGridController {
     Observer.subscribe('clear-search-input', this.clearSearchInputHandler);
     Observer.subscribe('search-input', this.searchInputHandler);
     Observer.subscribe('change-sort', this.changeSortHandler);
-    // Observer.subscribe('details-button-click');
-    // Observer.subscribe('buy-button-click');
   }
 
-  showGrid = ({ dataToShow, currentPage }) => {
-    let data = !dataToShow ? this.model.getItems() : dataToShow;
+  showGrid = (items) => {
+
+    let dataToShow, currentPage;
+    if (items) {
+      ({ dataToShow, currentPage } = items);
+    }
+    dataToShow = !dataToShow ? this.model.getItems() : dataToShow;
 
     if (!currentPage) {
       currentPage = DEFAULT_PAGE_NUMBER_ON_START;
     }
     this.searchFilterController.showSearchFilter();
-    this.paginationController.showPagination({ data, page: currentPage });
+    this.paginationController.showPagination({ data: dataToShow, page: currentPage });
     this.view.render({
       currentPage: currentPage,
-      data: data,
-      buyClick: this.buyButtonClickHandler,
-      detailsClick: this.detailsButtonClickHandler,
+      data: dataToShow,
     });
     if (this.duplicatePagination) {
       this.paginationController.clone();
@@ -41,7 +42,6 @@ export class ItemsGridController {
   };
 
   searchInputHandler = (ev) => {
-    let filteredData;
     let key = ev.key;
     let inputValue = ev.target.value.toLowerCase();
 
@@ -60,18 +60,8 @@ export class ItemsGridController {
     this.showGrid({ dataToShow: this.model.getItems() });
   };
 
-  buyButtonClickHandler = (data) => {
-    console.log('buy button click', data);
-    Observer.notify('buy-button-click', data);
-  };
-
-  detailsButtonClickHandler = (data) => {
-    Observer.notify('details-button-click', data);
-  };
-
   changeSortHandler = (ev) => {
     const sortType = ev.target.value;
-    // let dataToShow = [...this.model.items];
 
     switch (sortType) {
       case 'price_asc': {

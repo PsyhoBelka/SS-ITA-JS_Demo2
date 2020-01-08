@@ -28,8 +28,11 @@ search-input          ItemsGridController.searchInputHandler
 
 details-button-click  ModalDetailsController.showModal
 
-buy-button-click      CartModalController.addToCart
-clear-button-click    CartModalController.clearCart
-show-cart             CartModalController.showCart
-finish-order          CartModalController.confirmCart
+buy-button-click      CartController.addToCart
+clear-button-click    CartController.clearCart
+finish-order          CartController.confirmCart
+show-cart             CartController.renderModal
+header-load           CartController.renderLink
+
+cart-change           CartLinkController.showCartLink
  */
